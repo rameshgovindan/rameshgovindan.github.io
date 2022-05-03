@@ -2,7 +2,7 @@
  "papers"
  (lambda ()
    (LaTeX-add-bibitems
-    "cloudcluster"
+    "Ghosh22"
     "Ghosh2021b"
     "Yen2021a"
     "Hu2021b"
@@ -213,5 +213,5 @@
     "Anderson90"
     "Govindan92a"
     "Govindan02c"))
- :bibtex)
+ '(or :bibtex :latex))
 

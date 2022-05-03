@@ -429,20 +429,40 @@ Systems, Applications, and Services"}
 %% - mobile (cloud-enabled mobile systems)
 %% - sensing (networked sensing and sensor processing)
 
-@inproceedings{cloudcluster,
-abbr = {NSDI},
-title = {CloudCluster: Unearthing the Functional Structure of a Cloud Service},
+@article{Ghosh22,
+author = {Ghosh, Pradipta and Liu, Xiaochen and Qiu, Hang and Vieira, Marcos A. M. and Sukhatme, Gaurav S. and Govindan, Ramesh},
+title = {Sensing the Sensor: Estimating Camera Properties with Minimal Information},
+year = {2022},
+issue_date = {May 2022},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {18},
+number = {2},
+issn = {1550-4859},
+url = {https://doi.org/10.1145/3508393},
+doi = {10.1145/3508393},
+abstract = {Public outdoor surveillance cameras often have limited metadata describing their properties. Frequently, a public camera’s precise position, orientation, focal length, and image center are unknown; these attributes are necessary to precisely pinpoint the location of events seen in the camera. In this article, we ask: what is the minimal information needed to accurately estimate these properties for public cameras? We show, using a judicious combination of projective geometry, neural networks, and crowd-sourced annotations from human workers, that it is possible to, for example, localize 95% of the cameras in our test data set to within 12&nbsp;m using a single image taken from the camera. This performance is an order of magnitude better than PoseNet, a state-of-the-art neural network that needs significantly more information than our approach, and can only estimate position and orientation (and not other properties). Finally, we show that the camera’s inferred pose and properties can help design a number of virtual sensors, all of which have good accuracy.},
+journal = {ACM Trans. Sen. Netw.},
+month = {February},
+articleno = {28},
+numpages = {26},
+topics = {sensing},
+keywords = {mechanical turk, Localization, neural network, camera, vanishing point}
+}
+
+@inproceedings {Pang21a,
 author = {Weiwu Pang and Sourav Panda and Jehangir Amjad and Christophe Diot and Ramesh Govindan},
-year = 2022,
-date = {2022-04-01},
-urldate = {2022-04-01},
+title = {{CloudCluster}: Unearthing the Functional Structure of a Cloud Service},
 booktitle = {19th USENIX Symposium on Networked Systems Design and Implementation (NSDI 22)},
-publisher = {USENIX Association},
+year = {2022},
+isbn = {978-1-939133-27-4},
 address = {Renton, WA},
-pubstate = {forthcoming},
+pages = {1213--1230},
+url = {https://www.usenix.org/conference/nsdi22/presentation/pang},
+publisher = {USENIX Association},
 selected = {true},
 topics = {dcn},
-tppubtype = {inproceedings}
+month = {April},
 }
 
 @article{Ghosh2021b,
@@ -536,11 +556,10 @@ tppubtype = {article}
 @inproceedings{Hu2021,
 title = {Rim: Offloading Inference to the Edge},
 author = {Yitao Hu and Weiwu Pang and Xiaochen Liu and Rajrup Ghosh and Bongjun Ko and Wei-Han Lee and Ramesh Govindan},
-url = {https://conferences.computer.org/iotDI/2021/program.html},
-year = {2021},
+url = {https://dl.acm.org/doi/abs/10.1145/3450268.3453521},
+year = 2021,
 date = {2021-05-18},
 booktitle = {Proceedings of the 6th ACM/IEEE Conference on Internet of Things Design and Implementation, 2021},
-keywords = {},
 pubstate = {published},
 abbr = {IoTDI},
   topics    = {sensing,mobile},
@@ -1311,7 +1330,7 @@ tppubtype = {article}
   journal = {{IEEE/ACM Transactions on Networking}},
   year = 	 2014}
 
-@inproceedings{Georgios14,
+@article{Georgios14,
   author = 	 {George Papageorgiu and Shailendra Singh and Srikanth
                   Krishnamurthy and Ramesh Govindan and Tom La Porta},
   title = 	 {{A Distortion-Resistant Routing Framework for Video
@@ -2173,7 +2192,7 @@ author = "Jongkeun Na and Young-Jin Kim and Ramesh Govindan",
     title      = {{TOSThreads: Thread-Safe and Non-Invasive Preemption in TinyOS}},
     booktitle  = {{ Proceedings of the 7th ACM Conference on Embedded Networked Sensor Systems (SenSys'09)}},
     year       = "2009",
-    month      = "November",
+    month      = {November},
     location   = {Berkeley, CA, USA},
     abstract   = {
         Many threads packages have been proposed for programming wireless sensor
@@ -2314,7 +2333,7 @@ Multi-User Sensing System}},
        booktitle = "Proceedings of the 8th ACM/IEEE International Conference
 on Information Processing in Sensor Networks (IPSN'09)",
        year = "2009",
-       month = "April",
+       month = {April},
        address =      {San Francisco, California},
        pdfurl   = {http://enl.usc.edu/papers/cache/Gnawali09a.pdf},
        abstract = {As sensor networks mature, there will be
@@ -2657,7 +2676,7 @@ Govindan and John Caffrey and Mazen Wahbeh and Sami Masri},
     robustness of \mind to node failure.",
 }
 
-@inproceedings{chintala06a,
+@article{chintala06a,
     author = {Krishna Chintalapudi and Tat Fu and Jeongyeup Paek and
             Nupur Kothari and Sumit Rangwala and John Caffrey and
             Ramesh Govindan and Erik Johnson and Sami Masri },
