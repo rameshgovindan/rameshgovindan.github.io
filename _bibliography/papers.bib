@@ -451,6 +451,47 @@ abbr = {ToSN},
 keywords = {mechanical turk, Localization, neural network, camera, vanishing point}
 }
 
+@inproceedings{Qiu22a,
+author = {Qiu, Hang and Huang, Po-Han and Asavisanu, Namo and Liu, Xiaochen and Psounis, Konstantinos and Govindan, Ramesh},
+title = {AutoCast: Scalable Infrastructure-Less Cooperative Perception for Distributed Collaborative Driving},
+year = {2022},
+isbn = {9781450391856},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3498361.3538925},
+doi = {10.1145/3498361.3538925},
+abstract = {Autonomous vehicles use 3D sensors for perception. Cooperative perception enables vehicles to share sensor readings with each other to improve safety. Prior work in cooperative perception scales poorly even with infrastructure support. AUTOCAST1 enables scalable infrastructure-less cooperative perception using direct vehicle-to-vehicle communication. It carefully determines which objects to share based on positional relationships between traffic participants, and the time evolution of their trajectories. It coordinates vehicles and optimally schedules transmissions in a distributed fashion. Extensive evaluation results under different scenarios show that, unlike competing approaches, AUTOCAST can avoid crashes and near-misses which occur frequently without cooperative perception, its performance scales gracefully in dense traffic scenarios providing 2-4x visibility into safety critical objects compared to existing cooperative perception schemes, its transmission schedules can be completed on the real radio testbed, and its scheduling algorithm is near-optimal with negligible computation overhead.},
+booktitle = {Proceedings of the 20th Annual International Conference on Mobile Systems, Applications and Services},
+pages = {128–141},
+numpages = {14},
+keywords = {cooperative perception, V2V communication, autonomous cars},
+location = {Portland, Oregon},
+abbr = {MobiSys},
+selected = {true},
+topics = {vehicular},
+series = {MobiSys '22}
+}
+
+@article{Ahmad21a,
+  author    = {Fawad Ahmad and
+               Christina Shin and
+               Eugene Chai and
+               Karthik Sundaresan and
+               Ramesh Govindan},
+  title     = {{ARES:} Accurate, Autonomous, Near Real-time 3D Reconstruction using
+               Drones},
+  journal   = {CoRR},
+  volume    = {abs/2104.08634},
+  year      = {2021},
+  url       = {https://arxiv.org/abs/2104.08634},
+  eprinttype = {arXiv},
+  eprint    = {2104.08634},
+  timestamp = {Mon, 26 Apr 2021 17:25:10 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2104-08634.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abbr      = {ArXiv}
+}
+
 @inproceedings {Pang21a,
 author = {Weiwu Pang and Sourav Panda and Jehangir Amjad and Christophe Diot and Ramesh Govindan},
 title = {{CloudCluster}: Unearthing the Functional Structure of a Cloud Service},
@@ -465,6 +506,28 @@ selected = {true},
 topics = {dcn},
 month = {April},
 abbr = {NSDI}
+}
+
+@article{Zhang21a,
+  author    = {Mingyang Zhang and
+               Jianan Zhang and
+               Rui Wang and
+               Ramesh Govindan and
+               Jeffrey C. Mogul and
+               Amin Vahdat},
+  title     = {Gemini: Practical Reconfigurable Datacenter Networks with Topology
+               and Traffic Engineering},
+  journal   = {CoRR},
+  volume    = {abs/2110.08374},
+  year      = {2021},
+  url       = {https://arxiv.org/abs/2110.08374},
+  eprinttype = {arXiv},
+  eprint    = {2110.08374},
+  timestamp = {Thu, 03 Feb 2022 07:26:25 +0100},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2110-08374.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abbr      = {ArXiv},
+  topics    = {dcn}
 }
 
 @article{Ghosh2021b,
@@ -527,7 +590,6 @@ tppubtype = {article}
   doi       = {10.1145/3472883.3486993},
   timestamp = {Sun, 31 Oct 2021 10:05:01 +0100},
   abbr	    = {SoCC},
-  selected  = {true},
   topics    = {sensing,mobile},
   biburl    = {https://dblp.org/rec/conf/cloud/HuGG21.bib}
 }

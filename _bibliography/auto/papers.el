@@ -3,6 +3,9 @@
  (lambda ()
    (LaTeX-add-bibitems
     "Ghosh22"
+    "Qiu22a"
+    "Ahmad21a"
+    "Zhang21a"
     "Ghosh2021b"
     "Yen2021a"
     "Hu2021b"
