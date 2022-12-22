@@ -1,13 +1,14 @@
 ---
 layout: page
-title: projects
+title: research
 permalink: /projects/
-description: A growing collection of your cool projects.
 nav: true
 nav_order: 2
-display_categories: [work, fun]
+display_categories: [internet, iot]
 horizontal: false
 ---
+
+My research group is part of the [Networked Systems Lab](https://nsl.USC.edu) at [USC](https://www.USC.edu). We work on Internet infrastructure design and on the Internet of Things (IoT).
 
 <!-- pages/projects.md -->
 <div class="projects">
