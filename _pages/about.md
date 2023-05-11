@@ -2,24 +2,28 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: <i>Northrop-Grumman Chair in Engineering</i> <br>
+  <i>Professor of Computer Science and Electrical Engineering</i> <br>
+  <a href="https://viterbi.USC.edu">Viterbi School of Engineering</a> <br>
+  <a href="https://www.USC.edu">University of Southern California</a>
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image: ramesh_pic.jpg
+  image_circular: true # crops the image to make it circular
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
-
-news: true  # includes a list of news items
+      <p>SAL 212</p>
+      <p>941 Bloom Walk</p>
+      <p>Los Angeles, CA 90089</p>
+    
+news: false  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+## brief bio
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Ramesh Govindan is the Northrop Grumman Chair in Engineering and Professor of Computer Science and Electrical Engineering at the University of Southern California. Dr. Govindan received the B.Tech degree from the Indian Institute of Technology at Madras, and the M.S. and Ph.D. degrees from the University of California at Berkeley. Prior to joining USC he was a member of the technical staff at Bell Communications Research, and a project leader at USC’s Information Sciences Institute and at the International Computer Science Institute at Berkeley.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Dr. Govindan’s research has focused on scalable and robust routing infrastructures in large networks such as the Internet, on the structural properties of the Internet, and on the architectures and programming systems for wireless and mobile networks. He is a Fellow of the ACM and of the IEEE, the recipient of the 2018 IEEE Internet Award, a former Editor-in-Chief of the IEEE Transactions on Mobile Computing, and a Distinguished Alumnus of the Indian Institute of Technology, Madras.
+
