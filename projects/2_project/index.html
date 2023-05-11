@@ -1,4 +1,1645 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title>project 2 | Ramesh Govindan</title> <meta name="author" content="Ramesh Govindan"> <meta name="description" content="a project with a background image"> <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous"> <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700%7CRoboto+Slab:100,300,400,500,700%7CMaterial+Icons"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="/assets/img/usc-favicon.ico"> <link rel="stylesheet" href="/assets/css/main.css"> <link rel="canonical" href="https://rameshgovindan.github.io/projects/2_project/"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark"> <script src="/assets/js/theme.js"></script> <script src="/assets/js/dark_mode.js"></script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="//"><span class="font-weight-bold">Ramesh </span>Govindan</a> <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse text-right" id="navbarNav"> <ul class="navbar-nav ml-auto flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about</a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications</a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">research</a> </li> <li class="toggle-container"> <button id="light-toggle" title="Change theme"> <i class="fas fa-moon"></i> <i class="fas fa-sun"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5"> <div class="post"> <header class="post-header"> <h1 class="post-title">project 2</h1> <p class="post-description">a project with a background image</p> </header> <article> <p>Our lab has focused on vehicular sensing systems, mobile computing, and networked sensing. The following sections list some papers in each of these topics.</p> <h3 id="vehicular-sensing-systems">Vehicular sensing systems</h3> <ol class="bibliography"> <li> <div class="row"> <div class="col-sm-2 abbr"><abbr class="badge">MobiSys</abbr></div> <div id="Qiu22a" class="col-sm-8"> <div class="title">AutoCast: Scalable Infrastructure-Less Cooperative Perception for Distributed Collaborative Driving</div> <div class="author"> Hang Qiu, Po-Han Huang, Namo Asavisanu, and <span class="more-authors" title="click to view 3 more authors" onclick=" var element=$(this); element.attr('title', ''); var more_authors_text=element.text() == '3 more authors' ? 'Xiaochen Liu, Konstantinos Psounis, Ramesh Govindan' : '3 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.text(more_authors_text.substring(0, cursorPosition + 1)); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">3 more authors</span> </div> <div class="periodical"> <em>In Proceedings of the 20th Annual International Conference on Mobile Systems, Applications and Services</em> 2022 </div> <div class="links"> <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a> </div> <div class="abstract hidden"> <p>Autonomous vehicles use 3D sensors for perception. Cooperative perception enables vehicles to share sensor readings with each other to improve safety. Prior work in cooperative perception scales poorly even with infrastructure support. AUTOCAST1 enables scalable infrastructure-less cooperative perception using direct vehicle-to-vehicle communication. It carefully determines which objects to share based on positional relationships between traffic participants, and the time evolution of their trajectories. It coordinates vehicles and optimally schedules transmissions in a distributed fashion. Extensive evaluation results under different scenarios show that, unlike competing approaches, AUTOCAST can avoid crashes and near-misses which occur frequently without cooperative perception, its performance scales gracefully in dense traffic scenarios providing 2-4x visibility into safety critical objects compared to existing cooperative perception schemes, its transmission schedules can be completed on the real radio testbed, and its scheduling algorithm is near-optimal with negligible computation overhead.</p> </div> </div> </div> </li> <li> <div class="row"> <div class="col-sm-2 abbr"><abbr class="badge">NSDI</abbr></div> <div id="Ahmad2020" class="col-sm-8"> <div class="title">CarMap-Fast 3D Feature Map Updates for Automobiles</div> <div class="author"> Fawad Ahmad, Hang Qiu, Ray Eells, and <span class="more-authors" title="click to view 2 more authors" onclick=" var element=$(this); element.attr('title', ''); var more_authors_text=element.text() == '2 more authors' ? 'Fan Bai, Ramesh Govindan' : '2 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.text(more_authors_text.substring(0, cursorPosition + 1)); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">2 more authors</span> </div> <div class="periodical"> <em>In 17th USENIX Symposium on Networked Systems Design and Implementation (NSDI 20)</em> 2020 </div> <div class="links"> <a href="https://github.com/USC-NSL/CarMap" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a> <a href="https://nsl.usc.edu/wp-content/uploads/2020/02/nsdi20_slides_ahmad.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Slides</a> </div> </div> </div> </li> <li> <div class="row"> <div class="col-sm-2 abbr"><abbr class="badge">Fusion</abbr></div> <div id="Ahmad:2018" class="col-sm-8"> <div class="title">QuickSketch: Building 3D Representations in Unknown Environments Using Crowdsourcing</div> <div class="author"> Fawad Ahmad, Hang Qiu, Xiaochen Liu, and <span class="more-authors" title="click to view 2 more authors" onclick=" var element=$(this); element.attr('title', ''); var more_authors_text=element.text() == '2 more authors' ? 'Fan Bai, Ramesh Govindan' : '2 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.text(more_authors_text.substring(0, cursorPosition + 1)); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">2 more authors</span> </div> <div class="periodical"> <em>In 2018 21st International Conference on Information Fusion (FUSION)</em> 2018 </div> <div class="links"> </div> </div> </div> </li> <li> <div class="row"> <div class="col-sm-2 abbr"><abbr class="badge">IoTDI</abbr></div> <div id="Qiu18c" class="col-sm-8"> <div class="title">Kestrel: Video Analytics for Augmented Multi-Camera Vehicle Tracking</div> <div class="author"> H Qiu, X Liu, S Rallapalli, and <span class="more-authors" title="click to view 5 more authors" onclick=" var element=$(this); element.attr('title', ''); var more_authors_text=element.text() == '5 more authors' ? 'A J Bency, K Chan, R Urgaonkar, B S Manjunath, R Govindan' : '5 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.text(more_authors_text.substring(0, cursorPosition + 1)); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">5 more authors</span> </div> <div class="periodical"> <em>In 2018 IEEE/ACM Third International Conference on Internet-of-Things Design and Implementation (IoTDI)</em> 2018 </div> <div class="links"> </div> </div> </div> </li> <li> <div class="row"> <div class="col-sm-2 abbr"><abbr class="badge">TVT</abbr></div> <div id="Qiu18b" class="col-sm-8"> <div class="title">Towards Robust Vehicular Context Sensing</div> <div class="author"> H Qiu, J Chen, S Jain, and <span class="more-authors" title="click to view 7 more authors" onclick=" var element=$(this); element.attr('title', ''); var more_authors_text=element.text() == '7 more authors' ? 'Y Jiang, M McCartney, G Kar, F Bai, D K Grimm, M Gruteser, R Govindan' : '7 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.text(more_authors_text.substring(0, cursorPosition + 1)); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">7 more authors</span> </div> <div class="periodical"> <em>IEEE Transactions on Vehicular Technology</em> 2018 </div> <div class="links"> </div> </div> </div> </li> <li> <div class="row"> <div class="col-sm-2 abbr"><abbr class="badge">MobiSys</abbr></div> <div id="Qiu18d" class="col-sm-8"> <div class="title">AVR: Augmented Vehicular Reality</div> <div class="author"> Hang Qiu, Fawad Ahmad, Fan Bai, and <span class="more-authors" title="click to view 2 more authors" onclick=" var element=$(this); element.attr('title', ''); var more_authors_text=element.text() == '2 more authors' ? 'Marco Gruteser, Ramesh Govindan' : '2 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.text(more_authors_text.substring(0, cursorPosition + 1)); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">2 more authors</span> </div> <div class="periodical"> <em>In Proceedings of the 16th Annual International Conference on Mobile Systems, Applications, and Services (Mobisys)</em> 2018 </div> <div class="links"> </div> </div> </div> </li> <li> <div class="row"> <div class="col-sm-2 abbr"></div> <div id="Qiu17a" class="col-sm-8"> <div class="title">Augmented Vehicular Reality: Enabling Extended Vision for Future Vehicles</div> <div class="author"> Hang Qiu, Fawad Ahmad, <em>Ramesh Govindan</em>, and <span class="more-authors" title="click to view 3 more authors" onclick=" var element=$(this); element.attr('title', ''); var more_authors_text=element.text() == '3 more authors' ? 'Marco Gruteser, Fan Bai, Gorkem Kar' : '3 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.text(more_authors_text.substring(0, cursorPosition + 1)); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">3 more authors</span> </div> <div class="periodical"> <em>In Proceedings of the 18th International Workshop on Mobile Computing Systems and Applications, HotMobile 2017, Sonoma, CA, USA, February 21 - 22, 2017</em> 2017 </div> <div class="links"> </div> </div> </div> </li> <li> <div class="row"> <div class="col-sm-2 abbr"><abbr class="badge">SEC</abbr></div> <div id="Kar17b" class="col-sm-8"> <div class="title">Real-time Traffic Estimation at Vehicular Edge Nodes</div> <div class="author"> Gorkem Kar, Shubham Jain, Marco Gruteser, and <span class="more-authors" title="click to view 2 more authors" onclick=" var element=$(this); element.attr('title', ''); var more_authors_text=element.text() == '2 more authors' ? 'Fan Bai, Ramesh Govindan' : '2 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.text(more_authors_text.substring(0, cursorPosition + 1)); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">2 more authors</span> </div> <div class="periodical"> <em>In Proceedings of the Second ACM/IEEE Symposium on Edge Computing, San Jose / Silicon Valley, SEC 2017, CA, USA, October 12-14, 2017</em> 2017 </div> <div class="links"> </div> </div> </div> </li> <li> <div class="row"> <div class="col-sm-2 abbr"><abbr class="badge">SEC</abbr></div> <div id="Kar17a" class="col-sm-8"> <div class="title">Pre-DriveID: Pre-trip Driver Identification from In-vehicle Data</div> <div class="author"> Gorkem Kar, Shubham Jain, Marco Gruteser, and <span class="more-authors" title="click to view 3 more authors" onclick=" var element=$(this); element.attr('title', ''); var more_authors_text=element.text() == '3 more authors' ? 'Jinzhu Chen, Fan Bai, Ramesh Govindan' : '3 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.text(more_authors_text.substring(0, cursorPosition + 1)); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">3 more authors</span> </div> <div class="periodical"> <em>In Proceedings of the Second ACM/IEEE Symposium on Edge Computing, San Jose / Silicon Valley, SEC 2017, CA, USA, October 12-14, 2017</em> 2017 </div> <div class="links"> </div> </div> </div> </li> <li> <div class="row"> <div class="col-sm-2 abbr"><abbr class="badge">TVT</abbr></div> <div id="Qiu17b" class="col-sm-8"> <div class="title">Towards Robust Vehicular Context Sensing</div> <div class="author"> Hang Qiu, Jinzhu Chen, Shubham Jain, and <span class="more-authors" title="click to view 7 more authors" onclick=" var element=$(this); element.attr('title', ''); var more_authors_text=element.text() == '7 more authors' ? 'Yurong Jiang, Matt McCartney, Gorkem Kar, Fan Bai, Donald K. Grimm, Marco Gruteser, Ramesh Govindan' : '7 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.text(more_authors_text.substring(0, cursorPosition + 1)); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">7 more authors</span> </div> <div class="periodical"> <em>IEEE Transactions on Vehicular Technology</em> 2017 </div> <div class="links"> </div> </div> </div> </li> <li> <div class="row"> <div class="col-sm-2 abbr"><abbr class="badge">SenSys</abbr></div> <div id="Jiang15a" class="col-sm-8"> <div class="title"> CARLOC: Precisely Tracking Automobile Position </div> <div class="author"> Yurong Jiang, Hang Qiu, Matthew McCartney, and <span class="more-authors" title="click to view 5 more authors" onclick=" var element=$(this); element.attr('title', ''); var more_authors_text=element.text() == '5 more authors' ? 'Gaurav Sukhatme, Marco Gruteser, Fan Bai, Donald Grimm, Ramesh Govindan' : '5 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.text(more_authors_text.substring(0, cursorPosition + 1)); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">5 more authors</span> </div> <div class="periodical"> <em>In Proceedings of the 13th ACM Conference on Embedded Networked Sensor Systems (SenSys) </em> no 2015 </div> <div class="links"> </div> </div> </div> </li> </ol> <h3 id="mobile-computing">Mobile computing</h3> <ol class="bibliography"> <li> <div class="row"> <div class="col-sm-2 abbr"><abbr class="badge">SoCC</abbr></div> <div id="Hu2021b" class="col-sm-8"> <div class="title">Scrooge: A Cost-Effective Deep Learning Inference System</div> <div class="author"> Yitao Hu, Rajrup Ghosh, and <em>Ramesh Govindan</em> </div> <div class="periodical"> <em>In SoCC ’21: ACM Symposium on Cloud Computing, Seattle, WA, USA, November 1 - 4, 2021</em> 2021 </div> <div class="links"> </div> </div> </div> </li> <li> <div class="row"> <div class="col-sm-2 abbr"><abbr class="badge">IoTDI</abbr></div> <div id="Hu2021" class="col-sm-8"> <div class="title">Rim: Offloading Inference to the Edge</div> <div class="author"> Yitao Hu, Weiwu Pang, Xiaochen Liu, and <span class="more-authors" title="click to view 4 more authors" onclick=" var element=$(this); element.attr('title', ''); var more_authors_text=element.text() == '4 more authors' ? 'Rajrup Ghosh, Bongjun Ko, Wei-Han Lee, Ramesh Govindan' : '4 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.text(more_authors_text.substring(0, cursorPosition + 1)); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">4 more authors</span> </div> <div class="periodical"> <em>In Proceedings of the 6th ACM/IEEE Conference on Internet of Things Design and Implementation, 2021</em> 2021 </div> <div class="links"> </div> </div> </div> </li> <li> <div class="row"> <div class="col-sm-2 abbr"><abbr class="badge">Middleware</abbr></div> <div id="Hu:2018" class="col-sm-8"> <div class="title">Olympian: Scheduling GPU Usage in a Deep Neural Network Model Serving System</div> <div class="author"> Yitao Hu, Swati Rallapalli, Bongjun Ko, and <span class="more-authors" title="click to view 1 more author" onclick=" var element=$(this); element.attr('title', ''); var more_authors_text=element.text() == '1 more author' ? 'Ramesh Govindan' : '1 more author'; var cursorPosition=0; var textAdder=setInterval(function(){ element.text(more_authors_text.substring(0, cursorPosition + 1)); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">1 more author</span> </div> <div class="periodical"> <em>In Proceedings of the 19th International Middleware Conference</em> 2018 </div> <div class="links"> </div> </div> </div> </li> <li> <div class="row"> <div class="col-sm-2 abbr"><abbr class="badge">MobiSys</abbr></div> <div id="Liu18b" class="col-sm-8"> <div class="title">Gnome: A Practical Approach to NLOS Mitigation for GPS Positioning in Smartphones</div> <div class="author"> Xiaochen Liu, Suman Nath, and <em>Ramesh Govindan</em> </div> <div class="periodical"> <em>In Proceedings of the 16th Annual International Conference on Mobile Systems, Applications, and Services (Mobisys)</em> 2018 </div> <div class="links"> </div> </div> </div> </li> <li> <div class="row"> <div class="col-sm-2 abbr"><abbr class="badge">Ubicomp</abbr></div> <div id="Yitao16a" class="col-sm-8"> <div class="title"> ALPS: Accurate Landmark Positioning at City Scales </div> <div class="author"> Yitao Hu, Xiaochen Liu, Suman Nath, and <span class="more-authors" title="click to view 1 more author" onclick=" var element=$(this); element.attr('title', ''); var more_authors_text=element.text() == '1 more author' ? 'Ramesh Govindan' : '1 more author'; var cursorPosition=0; var textAdder=setInterval(function(){ element.text(more_authors_text.substring(0, cursorPosition + 1)); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">1 more author</span> </div> <div class="periodical"> <em>In the 2016 ACM International Joint Conference on Pervasive and Ubiquitous Computing (UbiComp 2016) </em> se 2016 </div> <div class="links"> </div> </div> </div> </li> <li> <div class="row"> <div class="col-sm-2 abbr"><abbr class="badge">MobiSys</abbr></div> <div id="Liu15a" class="col-sm-8"> <div class="title"> Efficient Privilege De-Escalation for Ad Libraries in Mobile Apps </div> <div class="author"> Bin Liu, Bin Liu, Hongxia Jin, and <span class="more-authors" title="click to view 1 more author" onclick=" var element=$(this); element.attr('title', ''); var more_authors_text=element.text() == '1 more author' ? 'Ramesh Govindan' : '1 more author'; var cursorPosition=0; var textAdder=setInterval(function(){ element.text(more_authors_text.substring(0, cursorPosition + 1)); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">1 more author</span> </div> <div class="periodical"> <em>In The 13th Annual International Conference on Mobile Systems, Applications, and Services (MobiSys 2015) </em> ma 2015 </div> <div class="links"> </div> </div> </div> </li> <li> <div class="row"> <div class="col-sm-2 abbr"><abbr class="badge">MobiSys</abbr></div> <div id="Singh15a" class="col-sm-8"> <div class="title">FlexiWeb: Network-Aware Compaction for Accelerating Mobile Web Transfers</div> <div class="author"> S. Singh, H. Madhyastha, S. Krishnamurthy, and <span class="more-authors" title="click to view 1 more author" onclick=" var element=$(this); element.attr('title', ''); var more_authors_text=element.text() == '1 more author' ? 'R. Govindan' : '1 more author'; var cursorPosition=0; var textAdder=setInterval(function(){ element.text(more_authors_text.substring(0, cursorPosition + 1)); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">1 more author</span> </div> <div class="periodical"> <em>In Proc. ACM MobiCom</em> ma 2015 </div> <div class="links"> </div> </div> </div> </li> </ol> <h3 id="networked-sensing">Networked sensing</h3> <ol class="bibliography"> <li> <div class="row"> <div class="col-sm-2 abbr"><abbr class="badge">ToSN</abbr></div> <div id="Ghosh22" class="col-sm-8"> <div class="title">Sensing the Sensor: Estimating Camera Properties with Minimal Information</div> <div class="author"> Pradipta Ghosh, Xiaochen Liu, Hang Qiu, and <span class="more-authors" title="click to view 3 more authors" onclick=" var element=$(this); element.attr('title', ''); var more_authors_text=element.text() == '3 more authors' ? 'Marcos A. M. Vieira, Gaurav S. Sukhatme, Ramesh Govindan' : '3 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.text(more_authors_text.substring(0, cursorPosition + 1)); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">3 more authors</span> </div> <div class="periodical"> <em>ACM Trans. Sen. Netw.</em> Feb 2022 </div> <div class="links"> <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a> </div> <div class="abstract hidden"> <p>Public outdoor surveillance cameras often have limited metadata describing their properties. Frequently, a public camera’s precise position, orientation, focal length, and image center are unknown; these attributes are necessary to precisely pinpoint the location of events seen in the camera. In this article, we ask: what is the minimal information needed to accurately estimate these properties for public cameras? We show, using a judicious combination of projective geometry, neural networks, and crowd-sourced annotations from human workers, that it is possible to, for example, localize 95% of the cameras in our test data set to within 12 m using a single image taken from the camera. This performance is an order of magnitude better than PoseNet, a state-of-the-art neural network that needs significantly more information than our approach, and can only estimate position and orientation (and not other properties). Finally, we show that the camera’s inferred pose and properties can help design a number of virtual sensors, all of which have good accuracy.</p> </div> </div> </div> </li> <li> <div class="row"> <div class="col-sm-2 abbr"><abbr class="badge">TMC</abbr></div> <div id="Ghosh2021b" class="col-sm-8"> <div class="title">Synthesis of Large-Scale Instant IoT Networks</div> <div class="author"> Pradipta Ghosh, Jonathan Bunton, Dimitrios Pylorof, and <span class="more-authors" title="click to view 6 more authors" onclick=" var element=$(this); element.attr('title', ''); var more_authors_text=element.text() == '6 more authors' ? 'Marcos A. M. Vieira, Kevin Chan, Ramesh Govindan, Gaurav S. Sukhatme, Paulo Tabuada, Gunjan Verma' : '6 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.text(more_authors_text.substring(0, cursorPosition + 1)); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">6 more authors</span> </div> <div class="periodical"> <em>IEEE Transactions on Mobile Computing</em> Feb 2021 </div> <div class="links"> <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a> </div> <div class="abstract hidden"> <p>While most networks have long lifetimes, temporary network infrastructure is often useful for special events, pop-up retail, or disaster response. An instant IoT network is one that is rapidly constructed, used for a few days, then dismantled. We consider the synthesis of instant IoT networks in urban settings. This synthesis problem must satisfy complex and competing constraints: sensor coverage, line-of-sight visibility, and network connectivity. The central challenge in our synthesis problem is quickly scaling to large regions while producing cost-effective solutions. We explore two qualitatively different representations of the synthesis problems using satisfiability modulo convex optimization (SMC), and mixed-integer linear programming (MILP). The former is more expressive, for our problem, than the latter, but is less well-suited for solving optimization problems like ours. We show how to express our network synthesis in these frameworks. To scale to problem sizes beyond what these frameworks are capable of, we develop a hierarchical synthesis technique that independently synthesizes networks in sub-regions of the deployment area, then combines these. We find that, while MILP outperforms SMC in some settings for smaller problem sizes, the fact that SMC’s expressivity matches our problem ensures that it uniformly generates better quality solutions at larger problem sizes.</p> </div> </div> </div> </li> <li> <div class="row"> <div class="col-sm-2 abbr"><abbr class="badge">SoCC</abbr></div> <div id="Hu2021b" class="col-sm-8"> <div class="title">Scrooge: A Cost-Effective Deep Learning Inference System</div> <div class="author"> Yitao Hu, Rajrup Ghosh, and <em>Ramesh Govindan</em> </div> <div class="periodical"> <em>In SoCC ’21: ACM Symposium on Cloud Computing, Seattle, WA, USA, November 1 - 4, 2021</em> Feb 2021 </div> <div class="links"> </div> </div> </div> </li> <li> <div class="row"> <div class="col-sm-2 abbr"><abbr class="badge">IoTDI</abbr></div> <div id="Hu2021" class="col-sm-8"> <div class="title">Rim: Offloading Inference to the Edge</div> <div class="author"> Yitao Hu, Weiwu Pang, Xiaochen Liu, and <span class="more-authors" title="click to view 4 more authors" onclick=" var element=$(this); element.attr('title', ''); var more_authors_text=element.text() == '4 more authors' ? 'Rajrup Ghosh, Bongjun Ko, Wei-Han Lee, Ramesh Govindan' : '4 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.text(more_authors_text.substring(0, cursorPosition + 1)); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">4 more authors</span> </div> <div class="periodical"> <em>In Proceedings of the 6th ACM/IEEE Conference on Internet of Things Design and Implementation, 2021</em> Feb 2021 </div> <div class="links"> </div> </div> </div> </li> <li> <div class="row"> <div class="col-sm-2 abbr"><abbr class="badge">IoTJ</abbr></div> <div id="bagchi2020new" class="col-sm-8"> <div class="title">New Frontiers in IoT: Networking, Systems, Reliability, and Security Challenges</div> <div class="author"> Saurabh Bagchi, Tarek F Abdelzaher, <em>Ramesh Govindan</em>, and <span class="more-authors" title="click to view 4 more authors" onclick=" var element=$(this); element.attr('title', ''); var more_authors_text=element.text() == '4 more authors' ? 'Prashant Shenoy, Akanksha Atrey, Pradipta Ghosh, Ran Xu' : '4 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.text(more_authors_text.substring(0, cursorPosition + 1)); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">4 more authors</span> </div> <div class="periodical"> <em>IEEE Internet of Things Journal</em> Feb 2020 </div> <div class="links"> </div> </div> </div> </li> <li> <div class="row"> <div class="col-sm-2 abbr"><abbr class="badge">IROS</abbr></div> <div id="ghosh2020iros" class="col-sm-8"> <div class="title">Persistent Connected Power Constrained Surveillance with Unmanned Aerial Vehicles</div> <div class="author"> Pradipta Ghosh, Paulo Tabuada, <em>Ramesh Govindan</em>, and <span class="more-authors" title="click to view 1 more author" onclick=" var element=$(this); element.attr('title', ''); var more_authors_text=element.text() == '1 more author' ? 'Gaurav S Sukhatme' : '1 more author'; var cursorPosition=0; var textAdder=setInterval(function(){ element.text(more_authors_text.substring(0, cursorPosition + 1)); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">1 more author</span> </div> <div class="periodical"> <em>In Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em> Feb 2020 </div> <div class="links"> </div> </div> </div> </li> <li> <div class="row"> <div class="col-sm-2 abbr"></div> <div id="Liu2020" class="col-sm-8"> <div class="title">Grab: Fast and Accurate Sensor Processing for Cashier-Free Shopping</div> <div class="author"> Xiaochen Liu, Yurong Jiang, Kyu-Han Kim, and <span class="more-authors" title="click to view 1 more author" onclick=" var element=$(this); element.attr('title', ''); var more_authors_text=element.text() == '1 more author' ? 'Ramesh Govindan' : '1 more author'; var cursorPosition=0; var textAdder=setInterval(function(){ element.text(more_authors_text.substring(0, cursorPosition + 1)); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">1 more author</span> </div> <div class="periodical"> <em>In </em> Feb 2020 </div> <div class="links"> </div> </div> </div> </li> <li> <div class="row"> <div class="col-sm-2 abbr"></div> <div id="ghosh2020rapid" class="col-sm-8"> <div class="title">Rapid Top-Down Synthesis of Large-Scale IoT Networks</div> <div class="author"> Pradipta Ghosh, Jonathan Bunton, Dimitrios Pylorof, and <span class="more-authors" title="click to view 6 more authors" onclick=" var element=$(this); element.attr('title', ''); var more_authors_text=element.text() == '6 more authors' ? 'Marcos Vieira, Kevin Chan, Ramesh Govindan, Gaurav Sukhatme, Paulo Tabuada, Gunjan Verma' : '6 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.text(more_authors_text.substring(0, cursorPosition + 1)); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">6 more authors</span> </div> <div class="periodical"> <em>In Proceedings of the IEEE International Conference on Computer Communications and Networks (ICCCN)</em> Feb 2020 </div> <div class="links"> </div> </div> </div> </li> <li> <div class="row"> <div class="col-sm-2 abbr"><abbr class="badge">Sensys</abbr></div> <div id="Liu2019" class="col-sm-8"> <div class="title">Caesar: Cross-camera Complex Activity Recognition</div> <div class="author"> Xiaochen Liu, Pradipta Ghosh, Oytun Ulutan, and <span class="more-authors" title="click to view 3 more authors" onclick=" var element=$(this); element.attr('title', ''); var more_authors_text=element.text() == '3 more authors' ? 'B.S. Manjunath, Kevin Chan, Ramesh Govindan' : '3 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.text(more_authors_text.substring(0, cursorPosition + 1)); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">3 more authors</span> </div> <div class="periodical"> Feb 2019 </div> <div class="links"> </div> </div> </div> </li> <li> <div class="row"> <div class="col-sm-2 abbr"><abbr class="badge">IoTDI</abbr></div> <div id="Qiu18c" class="col-sm-8"> <div class="title">Kestrel: Video Analytics for Augmented Multi-Camera Vehicle Tracking</div> <div class="author"> H Qiu, X Liu, S Rallapalli, and <span class="more-authors" title="click to view 5 more authors" onclick=" var element=$(this); element.attr('title', ''); var more_authors_text=element.text() == '5 more authors' ? 'A J Bency, K Chan, R Urgaonkar, B S Manjunath, R Govindan' : '5 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.text(more_authors_text.substring(0, cursorPosition + 1)); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">5 more authors</span> </div> <div class="periodical"> <em>In 2018 IEEE/ACM Third International Conference on Internet-of-Things Design and Implementation (IoTDI)</em> Feb 2018 </div> <div class="links"> </div> </div> </div> </li> <li> <div class="row"> <div class="col-sm-2 abbr"><abbr class="badge">ToN</abbr></div> <div id="Rager18a" class="col-sm-8"> <div class="title">Scalability and Satisfiability of Quality-of-Information in Wireless Networks</div> <div class="author"> Scott T Rager, Ertugrul N Ciftcioglu, Ram Ramanathan, and <span class="more-authors" title="click to view 2 more authors" onclick=" var element=$(this); element.attr('title', ''); var more_authors_text=element.text() == '2 more authors' ? 'Thomas F La Porta, Ramesh Govindan' : '2 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.text(more_authors_text.substring(0, cursorPosition + 1)); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">2 more authors</span> </div> <div class="periodical"> <em>IEEE/ACM Trans. Netw.</em> Feb 2018 </div> <div class="links"> </div> </div> </div> </li> </ol> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;img 
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- Head -->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    <!-- Metadata, OpenGraph and Schema.org -->
+    
+
+    <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>project 2 | Ramesh  Govindan</title>
+    <meta name="author" content="Ramesh  Govindan">
+    <meta name="description" content="a project with a background image">
+
+
+    <!-- Bootstrap & MDB -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700%7CRoboto+Slab:100,300,400,500,700%7CMaterial+Icons">
+
+    <!-- Code Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="" id="highlight_theme_light">
+
+    <!-- Styles -->
+    
+    <link rel="shortcut icon" href="/assets/img/usc-favicon.ico">
+    
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="https://rameshgovindan.github.io/projects/2_project/">
+    
+    <!-- Dark Mode -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark">
+
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/dark_mode.js"></script>
+    
+
+  </head>
+
+  <!-- Body -->
+  <body class="fixed-top-nav ">
+
+    <!-- Header -->
+    <header>
+
+      <!-- Nav Bar -->
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+        <div class="container">
+          <a class="navbar-brand title font-weight-lighter" href="//"><span class="font-weight-bold">Ramesh </span>Govindan</a>
+          <!-- Navbar Toggle -->
+          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse text-right" id="navbarNav">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+
+              <!-- About -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/">about</a>
+              </li>
+              
+
+              <!-- Other pages -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/publications/">publications</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/projects/">research</a>
+              </li>
+
+              <!-- Toogle theme mode -->
+              <li class="toggle-container">
+                <button id="light-toggle" title="Change theme">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Scrolling Progress Bar -->
+      <progress id="progress" value="0">
+        <div class="progress-container">
+          <span class="progress-bar"></span>
+        </div>
+      </progress>
+    </header>
+
+
+    <!-- Content -->
+    <div class="container mt-5">
+      <!-- page.html -->
+        <div class="post">
+
+          <header class="post-header">
+            <h1 class="post-title">project 2</h1>
+            <p class="post-description">a project with a background image</p>
+          </header>
+
+          <article>
+            <p>Our lab has focused on vehicular sensing systems, mobile computing, and networked sensing. The following sections list some papers in each of these topics.</p>
+
+<h3 id="vehicular-sensing-systems">Vehicular sensing systems</h3>
+
+<ol class="bibliography">
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">MobiSys</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="Qiu22a" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">AutoCast: Scalable Infrastructure-Less Cooperative Perception for Distributed Collaborative Driving</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Hang Qiu, Po-Han Huang, Namo Asavisanu, and
+          <span class="more-authors" title="click to view 3 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '3 more authors' ? 'Xiaochen Liu, Konstantinos Psounis, Ramesh Govindan' : '3 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">3 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In Proceedings of the 20th Annual International Conference on Mobile Systems, Applications and Services</em>, 2022
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1145/3498361.3538925"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.1145/3498361.3538925" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Autonomous vehicles use 3D sensors for perception. Cooperative perception enables vehicles to share sensor readings with each other to improve safety. Prior work in cooperative perception scales poorly even with infrastructure support. AUTOCAST1 enables scalable infrastructure-less cooperative perception using direct vehicle-to-vehicle communication. It carefully determines which objects to share based on positional relationships between traffic participants, and the time evolution of their trajectories. It coordinates vehicles and optimally schedules transmissions in a distributed fashion. Extensive evaluation results under different scenarios show that, unlike competing approaches, AUTOCAST can avoid crashes and near-misses which occur frequently without cooperative perception, its performance scales gracefully in dense traffic scenarios providing 2-4x visibility into safety critical objects compared to existing cooperative perception schemes, its transmission schedules can be completed on the real radio testbed, and its scheduling algorithm is near-optimal with negligible computation overhead.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">NSDI</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="Ahmad2020" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">CarMap-Fast 3D Feature Map Updates for Automobiles</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Fawad Ahmad, Hang Qiu, Ray Eells, and
+          <span class="more-authors" title="click to view 2 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '2 more authors' ? 'Fan Bai, Ramesh Govindan' : '2 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">2 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In 17th USENIX Symposium on Networked Systems Design and Implementation (NSDI 20)</em>, 2020
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a href="https://github.com/USC-NSL/CarMap" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+            <a href="https://nsl.usc.edu/wp-content/uploads/2020/02/nsdi20_slides_ahmad.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Slides</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">Fusion</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="Ahmad:2018" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">QuickSketch: Building 3D Representations in Unknown Environments Using Crowdsourcing</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Fawad Ahmad, Hang Qiu, Xiaochen Liu, and
+          <span class="more-authors" title="click to view 2 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '2 more authors' ? 'Fan Bai, Ramesh Govindan' : '2 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">2 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In 2018 21st International Conference on Information Fusion (FUSION)</em>, 2018
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.23919/ICIF.2018.8455437"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.23919/ICIF.2018.8455437" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">IoTDI</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="Qiu18c" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Kestrel: Video Analytics for Augmented Multi-Camera Vehicle Tracking</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        H Qiu, X Liu, S Rallapalli, and
+          <span class="more-authors" title="click to view 5 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '5 more authors' ? 'A J Bency, K Chan, R Urgaonkar, B S Manjunath, R Govindan' : '5 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">5 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In 2018 IEEE/ACM Third International Conference on Internet-of-Things Design and Implementation (IoTDI)</em>, 2018
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1109/IoTDI.2018.00015"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.1109/IoTDI.2018.00015" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">TVT</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="Qiu18b" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Towards Robust Vehicular Context Sensing</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        H Qiu, J Chen, S Jain, and
+          <span class="more-authors" title="click to view 7 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '7 more authors' ? 'Y Jiang, M McCartney, G Kar, F Bai, D K Grimm, M Gruteser, R Govindan' : '7 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">7 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>IEEE Transactions on Vehicular Technology</em>, 2018
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1109/TVT.2017.2771623"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.1109/TVT.2017.2771623" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">MobiSys</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="Qiu18d" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">AVR: Augmented Vehicular Reality</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Hang Qiu, Fawad Ahmad, Fan Bai, and
+          <span class="more-authors" title="click to view 2 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '2 more authors' ? 'Marco Gruteser, Ramesh Govindan' : '2 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">2 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In Proceedings of the 16th Annual International Conference on Mobile Systems, Applications, and Services (Mobisys)</em>, 2018
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1145/3210240.3210319"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.1145/3210240.3210319" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"></div>
+
+        <!-- Entry bib key -->
+        <div id="Qiu17a" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Augmented Vehicular Reality: Enabling Extended Vision for Future Vehicles</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Hang Qiu, Fawad Ahmad, <em>Ramesh Govindan</em>, and
+          <span class="more-authors" title="click to view 3 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '3 more authors' ? 'Marco Gruteser, Fan Bai, Gorkem Kar' : '3 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">3 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In Proceedings of the 18th International Workshop on Mobile Computing
+               Systems and Applications, HotMobile 2017, Sonoma, CA, USA, February
+               21 - 22, 2017</em>, 2017
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">SEC</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="Kar17b" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Real-time Traffic Estimation at Vehicular Edge Nodes</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Gorkem Kar, Shubham Jain, Marco Gruteser, and
+          <span class="more-authors" title="click to view 2 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '2 more authors' ? 'Fan Bai, Ramesh Govindan' : '2 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">2 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In Proceedings of the Second ACM/IEEE Symposium on Edge Computing,
+               San Jose / Silicon Valley, SEC 2017, CA, USA, October 12-14, 2017</em>, 2017
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">SEC</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="Kar17a" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Pre-DriveID: Pre-trip Driver Identification from In-vehicle Data</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Gorkem Kar, Shubham Jain, Marco Gruteser, and
+          <span class="more-authors" title="click to view 3 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '3 more authors' ? 'Jinzhu Chen, Fan Bai, Ramesh Govindan' : '3 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">3 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In Proceedings of the Second ACM/IEEE Symposium on Edge Computing,
+               San Jose / Silicon Valley, SEC 2017, CA, USA, October 12-14, 2017</em>, 2017
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1145/3132211.3134462"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.1145/3132211.3134462" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">TVT</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="Qiu17b" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Towards Robust Vehicular Context Sensing</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Hang Qiu, Jinzhu Chen, Shubham Jain, and
+          <span class="more-authors" title="click to view 7 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '7 more authors' ? 'Yurong Jiang, Matt McCartney, Gorkem Kar, Fan Bai, Donald K. Grimm, Marco Gruteser, Ramesh Govindan' : '7 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">7 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>IEEE Transactions on Vehicular Technology</em>, 2017
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">SenSys</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="Jiang15a" class="col-sm-8">
+        <!-- Title -->
+        <div class="title"> CARLOC: Precisely Tracking Automobile Position </div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Yurong Jiang, Hang Qiu, Matthew McCartney, and
+          <span class="more-authors" title="click to view 5 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '5 more authors' ? 'Gaurav Sukhatme, Marco Gruteser, Fan Bai, Donald Grimm, Ramesh Govindan' : '5 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">5 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In  Proceedings of the 13th ACM Conference on Embedded Networked Sensor Systems (SenSys) </em>,  no 2015
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+</ol>
+
+<h3 id="mobile-computing">Mobile computing</h3>
+
+<ol class="bibliography">
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">SoCC</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="Hu2021b" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Scrooge: A Cost-Effective Deep Learning Inference System</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Yitao Hu, Rajrup Ghosh, and <em>Ramesh Govindan</em>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In SoCC ’21: ACM Symposium on Cloud Computing, Seattle, WA, USA, November
+               1 - 4, 2021</em>, 2021
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1145/3472883.3486993"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.1145/3472883.3486993" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">IoTDI</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="Hu2021" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Rim: Offloading Inference to the Edge</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Yitao Hu, Weiwu Pang, Xiaochen Liu, and
+          <span class="more-authors" title="click to view 4 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '4 more authors' ? 'Rajrup Ghosh, Bongjun Ko, Wei-Han Lee, Ramesh Govindan' : '4 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">4 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In Proceedings of the 6th ACM/IEEE Conference on Internet of Things Design and Implementation, 2021</em>, 2021
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">Middleware</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="Hu:2018" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Olympian: Scheduling GPU Usage in a Deep Neural Network Model Serving System</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Yitao Hu, Swati Rallapalli, Bongjun Ko, and
+          <span class="more-authors" title="click to view 1 more author" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '1 more author' ? 'Ramesh Govindan' : '1 more author';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">1 more author</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In Proceedings of the 19th International Middleware Conference</em>, 2018
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1145/3274808.3274813"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.1145/3274808.3274813" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">MobiSys</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="Liu18b" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Gnome: A Practical Approach to NLOS Mitigation for GPS Positioning in Smartphones</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Xiaochen Liu, Suman Nath, and <em>Ramesh Govindan</em>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In Proceedings of the 16th Annual International Conference on Mobile Systems, Applications, and Services (Mobisys)</em>, 2018
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1145/3210240.3210343"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.1145/3210240.3210343" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">Ubicomp</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="Yitao16a" class="col-sm-8">
+        <!-- Title -->
+        <div class="title"> ALPS: Accurate Landmark Positioning at City Scales </div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Yitao Hu, Xiaochen Liu, Suman Nath, and
+          <span class="more-authors" title="click to view 1 more author" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '1 more author' ? 'Ramesh Govindan' : '1 more author';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">1 more author</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In  the 2016 ACM International Joint Conference on Pervasive and Ubiquitous Computing (UbiComp 2016) </em>,  se 2016
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">MobiSys</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="Liu15a" class="col-sm-8">
+        <!-- Title -->
+        <div class="title"> Efficient Privilege De-Escalation for Ad Libraries in Mobile Apps </div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Bin Liu, Bin Liu, Hongxia Jin, and
+          <span class="more-authors" title="click to view 1 more author" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '1 more author' ? 'Ramesh Govindan' : '1 more author';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">1 more author</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In  The 13th Annual International Conference on Mobile Systems, Applications, and Services (MobiSys 2015) </em>,  ma 2015
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">MobiSys</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="Singh15a" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">FlexiWeb: Network-Aware Compaction for Accelerating
+                  Mobile Web Transfers</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        S. Singh, H. Madhyastha, S. Krishnamurthy, and
+          <span class="more-authors" title="click to view 1 more author" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '1 more author' ? 'R. Govindan' : '1 more author';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">1 more author</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In Proc. ACM MobiCom</em>,  ma 2015
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+</ol>
+
+<h3 id="networked-sensing">Networked sensing</h3>
+
+<ol class="bibliography">
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">ToSN</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="Ghosh22" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Sensing the Sensor: Estimating Camera Properties with Minimal Information</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Pradipta Ghosh, Xiaochen Liu, Hang Qiu, and
+          <span class="more-authors" title="click to view 3 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '3 more authors' ? 'Marcos A. M. Vieira, Gaurav S. Sukhatme, Ramesh Govindan' : '3 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">3 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>ACM Trans. Sen. Netw.</em>, Feb 2022
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1145/3508393"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.1145/3508393" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Public outdoor surveillance cameras often have limited metadata describing their properties. Frequently, a public camera’s precise position, orientation, focal length, and image center are unknown; these attributes are necessary to precisely pinpoint the location of events seen in the camera. In this article, we ask: what is the minimal information needed to accurately estimate these properties for public cameras? We show, using a judicious combination of projective geometry, neural networks, and crowd-sourced annotations from human workers, that it is possible to, for example, localize 95% of the cameras in our test data set to within 12 m using a single image taken from the camera. This performance is an order of magnitude better than PoseNet, a state-of-the-art neural network that needs significantly more information than our approach, and can only estimate position and orientation (and not other properties). Finally, we show that the camera’s inferred pose and properties can help design a number of virtual sensors, all of which have good accuracy.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">TMC</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="Ghosh2021b" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Synthesis of Large-Scale Instant IoT Networks</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Pradipta Ghosh, Jonathan Bunton, Dimitrios Pylorof, and
+          <span class="more-authors" title="click to view 6 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '6 more authors' ? 'Marcos A. M. Vieira, Kevin Chan, Ramesh Govindan, Gaurav S. Sukhatme, Paulo Tabuada, Gunjan Verma' : '6 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">6 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>IEEE Transactions on Mobile Computing</em>, Feb 2021
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1109/TMC.2021.3099005"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.1109/TMC.2021.3099005" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>While most networks have long lifetimes, temporary network infrastructure is often useful for special events, pop-up retail,
+or disaster response. An instant IoT network is one that is rapidly constructed, used for a few days, then dismantled. We consider the
+synthesis of instant IoT networks in urban settings. This synthesis problem must satisfy complex and competing constraints: sensor
+coverage, line-of-sight visibility, and network connectivity. The central challenge in our synthesis problem is quickly scaling to large
+regions while producing cost-effective solutions. We explore two qualitatively different representations of the synthesis problems using
+satisfiability modulo convex optimization (SMC), and mixed-integer linear programming (MILP). The former is more expressive, for our
+problem, than the latter, but is less well-suited for solving optimization problems like ours. We show how to express our network
+synthesis in these frameworks. To scale to problem sizes beyond what these frameworks are capable of, we develop a hierarchical
+synthesis technique that independently synthesizes networks in sub-regions of the deployment area, then combines these. We find
+that, while MILP outperforms SMC in some settings for smaller problem sizes, the fact that SMC’s expressivity matches our problem
+ensures that it uniformly generates better quality solutions at larger problem sizes.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">SoCC</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="Hu2021b" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Scrooge: A Cost-Effective Deep Learning Inference System</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Yitao Hu, Rajrup Ghosh, and <em>Ramesh Govindan</em>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In SoCC ’21: ACM Symposium on Cloud Computing, Seattle, WA, USA, November
+               1 - 4, 2021</em>, Feb 2021
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1145/3472883.3486993"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.1145/3472883.3486993" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">IoTDI</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="Hu2021" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Rim: Offloading Inference to the Edge</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Yitao Hu, Weiwu Pang, Xiaochen Liu, and
+          <span class="more-authors" title="click to view 4 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '4 more authors' ? 'Rajrup Ghosh, Bongjun Ko, Wei-Han Lee, Ramesh Govindan' : '4 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">4 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In Proceedings of the 6th ACM/IEEE Conference on Internet of Things Design and Implementation, 2021</em>, Feb 2021
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">IoTJ</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="bagchi2020new" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">New Frontiers in IoT: Networking, Systems, Reliability, and Security Challenges</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Saurabh Bagchi, Tarek F Abdelzaher, <em>Ramesh Govindan</em>, and
+          <span class="more-authors" title="click to view 4 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '4 more authors' ? 'Prashant Shenoy, Akanksha Atrey, Pradipta Ghosh, Ran Xu' : '4 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">4 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>IEEE Internet of Things Journal</em>, Feb 2020
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">IROS</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="ghosh2020iros" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Persistent Connected Power Constrained Surveillance with Unmanned Aerial Vehicles</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Pradipta Ghosh, Paulo Tabuada, <em>Ramesh Govindan</em>, and
+          <span class="more-authors" title="click to view 1 more author" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '1 more author' ? 'Gaurav S Sukhatme' : '1 more author';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">1 more author</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, Feb 2020
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"></div>
+
+        <!-- Entry bib key -->
+        <div id="Liu2020" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Grab: Fast and Accurate Sensor Processing for Cashier-Free Shopping</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Xiaochen Liu, Yurong Jiang, Kyu-Han Kim, and
+          <span class="more-authors" title="click to view 1 more author" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '1 more author' ? 'Ramesh Govindan' : '1 more author';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">1 more author</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In </em>, Feb 2020
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"></div>
+
+        <!-- Entry bib key -->
+        <div id="ghosh2020rapid" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Rapid Top-Down Synthesis of Large-Scale IoT Networks</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Pradipta Ghosh, Jonathan Bunton, Dimitrios Pylorof, and
+          <span class="more-authors" title="click to view 6 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '6 more authors' ? 'Marcos Vieira, Kevin Chan, Ramesh Govindan, Gaurav Sukhatme, Paulo Tabuada, Gunjan Verma' : '6 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">6 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In Proceedings of the IEEE International Conference on Computer Communications and Networks (ICCCN)</em>, Feb 2020
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">Sensys</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="Liu2019" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Caesar: Cross-camera Complex Activity Recognition</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Xiaochen Liu, Pradipta Ghosh, Oytun Ulutan, and
+          <span class="more-authors" title="click to view 3 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '3 more authors' ? 'B.S. Manjunath, Kevin Chan, Ramesh Govindan' : '3 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">3 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          Feb 2019
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="doi.org/10.1145/3356250.3360041"></span>
+              <span class="__dimensions_badge_embed__" data-doi="doi.org/10.1145/3356250.3360041" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">IoTDI</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="Qiu18c" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Kestrel: Video Analytics for Augmented Multi-Camera Vehicle Tracking</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        H Qiu, X Liu, S Rallapalli, and
+          <span class="more-authors" title="click to view 5 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '5 more authors' ? 'A J Bency, K Chan, R Urgaonkar, B S Manjunath, R Govindan' : '5 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">5 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In 2018 IEEE/ACM Third International Conference on Internet-of-Things Design and Implementation (IoTDI)</em>, Feb 2018
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1109/IoTDI.2018.00015"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.1109/IoTDI.2018.00015" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">ToN</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="Rager18a" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Scalability and Satisfiability of Quality-of-Information in Wireless Networks</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Scott T Rager, Ertugrul N Ciftcioglu, Ram Ramanathan, and
+          <span class="more-authors" title="click to view 2 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '2 more authors' ? 'Thomas F La Porta, Ramesh Govindan' : '2 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">2 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>IEEE/ACM Trans. Netw.</em>, Feb 2018
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1109/TNET.2017.2781202"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.1109/TNET.2017.2781202" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+</ol>
+
+<!-- Every project has a beautiful feature showcase page. -->
+<!-- It's easy to include images in a flexible 3-column grid format. -->
+<!-- Make your photos 1/3, 2/3, or full width. -->
+
+<!-- To give your project a background in the portfolio page, just add the img tag to the front matter like so: -->
+
+<!--     --- -->
+<!--     layout: page -->
+<!--     title: project -->
+<!--     description: a project with a background image -->
+<!--     img: /assets/img/12.jpg -->
+<!--     --- -->
+
+<!-- <div class="row"> -->
+<!--     <div class="col-sm mt-3 mt-md-0"> -->
+<!--         <figure>
+
+  <picture>
+    
+    <source 
+        class="responsive-img-srcset"
+        media="(max-width: 480px)" 
+        srcset="/assets/img/1-480.webp"
+      />
+    <source 
+        class="responsive-img-srcset"
+        media="(max-width: 800px)" 
+        srcset="/assets/img/1-800.webp"
+      />
+    <source 
+        class="responsive-img-srcset"
+        media="(max-width: 1400px)" 
+        srcset="/assets/img/1-1400.webp"
+      />
+    
+
+    <!-- Fallback to the original file -->
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;img 
   src="/assets/img/1.jpg"
   class="img-fluid rounded z-depth-1"  
   width="auto" 
@@ -12,7 +1653,106 @@
   
   onerror="this.onerror=null; $('.responsive-img-srcset').remove();"
 /&gt;
-</code></pre></div></div> <p>&lt;/picture&gt;</p> <p>&lt;/figure&gt; –&gt; &lt;!– <figure></figure></p> <picture> <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/3-480.webp"></source> <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/3-800.webp"></source> <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/3-1400.webp"></source> <img src="/assets/img/3.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> <p>&lt;/figure&gt; –&gt; &lt;!– <figure></figure></p> <picture> <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/5-480.webp"></source> <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/5-800.webp"></source> <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/5-1400.webp"></source> <img src="/assets/img/5.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> <p>&lt;/figure&gt; –&gt; &lt;!– <figure></figure></p> <picture> <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/5-480.webp"></source> <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/5-800.webp"></source> <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/5-1400.webp"></source> <img src="/assets/img/5.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> <p>&lt;/figure&gt; –&gt; </p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;img 
+</code></pre></div></div>
+
+<p>&lt;/picture&gt;</p>
+
+<p>&lt;/figure&gt;
+ –&gt;
+<!--     </div> -->
+<!--     <div class="col-sm mt-3 mt-md-0"> -->
+&lt;!–         <figure></figure></p>
+
+<picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/3-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/3-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/3-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/3.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+<p>&lt;/figure&gt;
+ –&gt;
+<!--     </div> -->
+<!--     <div class="col-sm mt-3 mt-md-0"> -->
+&lt;!–         <figure></figure></p>
+
+<picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/5-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/5-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/5-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/5.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+<p>&lt;/figure&gt;
+ –&gt;
+<!--     </div> -->
+<!-- </div> -->
+<!-- <div class="caption"> -->
+<!--     Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles. -->
+<!-- </div> -->
+<!-- <div class="row"> -->
+<!--     <div class="col-sm mt-3 mt-md-0"> -->
+&lt;!–         <figure></figure></p>
+
+<picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/5-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/5-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/5-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/5.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+<p>&lt;/figure&gt;
+ –&gt;
+<!--     </div> -->
+<!-- </div> -->
+<!-- <div class="caption"> -->
+<!--     This image can also have a caption. It's like magic. -->
+<!-- </div> --></p>
+
+<!-- You can also put regular text between your rows of images. -->
+<!-- Say you wanted to write a little bit about your project before you posted the rest of the images. -->
+<!-- You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images. -->
+
+<!-- <div class="row justify-content-sm-center"> -->
+<!--     <div class="col-sm-8 mt-3 mt-md-0"> -->
+<!--         <figure>
+
+  <picture>
+    
+    <source 
+        class="responsive-img-srcset"
+        media="(max-width: 480px)" 
+        srcset="/assets/img/6-480.webp"
+      />
+    <source 
+        class="responsive-img-srcset"
+        media="(max-width: 800px)" 
+        srcset="/assets/img/6-800.webp"
+      />
+    <source 
+        class="responsive-img-srcset"
+        media="(max-width: 1400px)" 
+        srcset="/assets/img/6-1400.webp"
+      />
+    
+
+    <!-- Fallback to the original file -->
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;img 
   src="/assets/img/6.jpg"
   class="img-fluid rounded z-depth-1"  
   width="auto" 
@@ -26,4 +1766,180 @@
   
   onerror="this.onerror=null; $('.responsive-img-srcset').remove();"
 /&gt;
-</code></pre></div></div> <p>&lt;/picture&gt;</p> <p>&lt;/figure&gt; –&gt; &lt;!– <figure></figure></p> <picture> <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/11-480.webp"></source> <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/11-800.webp"></source> <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/11-1400.webp"></source> <img src="/assets/img/11.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> <p>&lt;/figure&gt; –&gt; </p> </article> </div> </div> <footer class="fixed-bottom"> <div class="container mt-0"> © Copyright 2023 Ramesh Govindan. </div> </footer> <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script> <script defer src="/assets/js/masonry.js" type="text/javascript"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script> <script defer src="/assets/js/zoom.js"></script> <script defer src="/assets/js/common.js"></script> <script type="text/javascript">window.MathJax={tex:{tags:"ams"}};</script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script> <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> <script type="text/javascript">function progressBarSetup(){"max"in document.createElement("progress")?(initializeProgressElement(),$(document).on("scroll",function(){progressBar.attr({value:getCurrentScrollPosition()})}),$(window).on("resize",initializeProgressElement)):(resizeProgressBar(),$(document).on("scroll",resizeProgressBar),$(window).on("resize",resizeProgressBar))}function getCurrentScrollPosition(){return $(window).scrollTop()}function initializeProgressElement(){let e=$("#navbar").outerHeight(!0);$("body").css({"padding-top":e}),$("progress-container").css({"padding-top":e}),progressBar.css({top:e}),progressBar.attr({max:getDistanceToScroll(),value:getCurrentScrollPosition()})}function getDistanceToScroll(){return $(document).height()-$(window).height()}function resizeProgressBar(){progressBar.css({width:getWidthPercentage()+"%"})}function getWidthPercentage(){return getCurrentScrollPosition()/getDistanceToScroll()*100}const progressBar=$("#progress");window.onload=function(){setTimeout(progressBarSetup,50)};</script> </body> </html>
+</code></pre></div></div>
+
+<p>&lt;/picture&gt;</p>
+
+<p>&lt;/figure&gt;
+ –&gt;
+<!--     </div> -->
+<!--     <div class="col-sm-4 mt-3 mt-md-0"> -->
+&lt;!–         <figure></figure></p>
+
+<picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/11-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/11-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/11-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/11.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+<p>&lt;/figure&gt;
+ –&gt;
+<!--     </div> -->
+<!-- </div> -->
+<!-- <div class="caption"> -->
+<!--     You can also have artistically styled 2/3 + 1/3 images, like these. -->
+<!-- </div> --></p>
+
+<!-- The code is simple. -->
+<!-- Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system). -->
+<!-- To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes. -->
+<!-- Here's the code for the last row of images above: -->
+
+<!--  -->
+<!-- ```html -->
+<!-- <div class="row justify-content-sm-center"> -->
+<!--     <div class="col-sm-8 mt-3 mt-md-0"> -->
+<!--         {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %} -->
+<!--     </div> -->
+<!--     <div class="col-sm-4 mt-3 mt-md-0"> -->
+<!--         {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %} -->
+<!--     </div> -->
+<!-- </div> -->
+<!-- ``` -->
+<!--  -->
+
+          </article>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->    
+    <footer class="fixed-bottom">
+      <div class="container mt-0">
+        © Copyright 2023 Ramesh  Govindan. 
+      </div>
+    </footer>
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Bootsrap & MDB scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+    <!-- Masonry & imagesLoaded -->
+  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script defer src="/assets/js/masonry.js" type="text/javascript"></script>
+    
+  <!-- Medium Zoom JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
+  <script defer src="/assets/js/zoom.js"></script><!-- Load Common JS -->
+  <script defer src="/assets/js/common.js"></script>
+  <script defer src="/assets/js/copy_code.js" type="text/javascript"></script>
+
+    
+  <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+  <script async src="https://badge.dimensions.ai/badge.js"></script>
+
+    <!-- MathJax -->
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        tags: 'ams'
+      }
+    };
+  </script>
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+    
+    
+
+<!-- Scrolling Progress Bar -->
+<script type="text/javascript">
+  /*
+   * This JavaScript code has been adapted from the article 
+   * https://css-tricks.com/reading-position-indicator/ authored by Pankaj Parashar, 
+   * published on the website https://css-tricks.com on the 7th of May, 2014.
+   * Couple of changes were made to the original code to make it compatible 
+   * with the `al-foio` theme.
+   */
+  const progressBar = $("#progress");
+  /*
+   * We set up the bar after all elements are done loading.
+   * In some cases, if the images in the page are larger than the intended
+   * size they'll have on the page, they'll be resized via CSS to accomodate
+   * the desired size. This mistake, however, breaks the computations as the
+   * scroll size is computed as soon as the elements finish loading.
+   * To account for this, a minimal delay was introduced before computing the
+   * values.
+   */
+  window.onload = function () {
+    setTimeout(progressBarSetup, 50);
+  };
+  /*
+   * We set up the bar according to the browser.
+   * If the browser supports the progress element we use that.
+   * Otherwise, we resize the bar thru CSS styling
+   */
+  function progressBarSetup() {
+    if ("max" in document.createElement("progress")) {
+      initializeProgressElement();
+      $(document).on("scroll", function() {
+        progressBar.attr({ value: getCurrentScrollPosition() });
+      });
+      $(window).on("resize", initializeProgressElement);
+    } else {
+      resizeProgressBar();
+      $(document).on("scroll", resizeProgressBar);
+      $(window).on("resize", resizeProgressBar);
+    }
+  }
+  /*
+   * The vertical scroll position is the same as the number of pixels that
+   * are hidden from view above the scrollable area. Thus, a value > 0 is
+   * how much the user has scrolled from the top
+   */
+  function getCurrentScrollPosition() {
+    return $(window).scrollTop();
+  }
+
+  function initializeProgressElement() {
+    let navbarHeight = $("#navbar").outerHeight(true);
+    $("body").css({ "padding-top": navbarHeight });
+    $("progress-container").css({ "padding-top": navbarHeight });
+    progressBar.css({ top: navbarHeight });
+    progressBar.attr({
+      max: getDistanceToScroll(),
+      value: getCurrentScrollPosition(),
+    });
+  }
+  /*
+   * The offset between the html document height and the browser viewport
+   * height will be greater than zero if vertical scroll is possible.
+   * This is the distance the user can scroll
+   */
+  function getDistanceToScroll() {
+    return $(document).height() - $(window).height();
+  }
+
+  function resizeProgressBar() {
+    progressBar.css({ width: getWidthPercentage() + "%" });
+  }
+  // The scroll ratio equals the percentage to resize the bar
+  function getWidthPercentage() {
+    return (getCurrentScrollPosition() / getDistanceToScroll()) * 100;
+  }
+</script>
+
+  </body>
+</html>
