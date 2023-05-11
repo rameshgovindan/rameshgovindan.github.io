@@ -4,6 +4,7 @@ title: about
 permalink: /
 subtitle: <i>Northrop-Grumman Chair in Engineering</i> <br>
   <i>Professor of Computer Science and Electrical Engineering</i> <br>
+  <a href="https://cs.USC.edu">Thomas Lord Department of Computer Science</a> <br>
   <a href="https://viterbi.USC.edu">Viterbi School of Engineering</a> <br>
   <a href="https://www.USC.edu">University of Southern California</a>
 
