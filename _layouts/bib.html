@@ -143,7 +143,7 @@
           {%- endif %}
           {%- unless entry.bibtex_hide %}
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-          {%- endif %}
+          {%- endunless %}
           {%- if entry.html %}
             <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
           {%- endif %}
@@ -231,6 +231,6 @@
           <div class="bibtex hidden">
             {% highlight bibtex %}{{ entry.bibtex | hideCustomBibtex }}{% endhighlight %}
           </div>
-          {%- endif %}
+          {%- endunless %}
         </div>
       </div>
