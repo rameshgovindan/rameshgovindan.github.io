@@ -2,6 +2,7 @@
  "papers"
  (lambda ()
    (LaTeX-add-bibitems
+    "Qiu2023"
     "socc22-quadrant"
     "Sucha2022"
     "Ghosh22"
