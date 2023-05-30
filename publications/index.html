@@ -115,6 +115,134 @@
 
 <!-- _pages/publications.md -->
 <div class="publications">
+  <h2 class="year">2023</h2>
+  <ol class="bibliography">
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"></div>
+
+        <!-- Entry bib key -->
+        <div id="Chitavisu23a" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Optimal Oblivious Routing With Concave Objectives for Structured Networks</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        K. Chitavisutthivong, S. Supittayapornpong, P. Namyar, and
+          <span class="more-authors" title="click to view 3 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '3 more authors' ? 'M. Zhang, M. Yu, R. Govindan' : '3 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">3 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>IEEE/ACM Transactions on Networking</em>, Apr 2023
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1109/TNET.2023.3264632"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Oblivious routing distributes traffic from sources to destinations following predefined routes with rules independent of traffic demands. While finding optimal oblivious routing with a concave objective is intractable for general topologies, we show that it is tractable for structured topologies often used in datacenter networks. To achieve this, we apply graph automorphism and prove the existence of the optimal automorphism-invariant solution. This result reduces the search space to targeting the optimal automorphism-invariant solution. We design an iterative algorithm to obtain such a solution by alternating between convex optimization and a linear program. The convex optimization finds an automorphism-invariant solution based on representative variables and constraints, making the problem tractable. The linear program generates adversarial demands to ensure the final result satisfies all possible demands. Since the construction of the representative variables and constraints are combinatorial problems, we design polynomial-time algorithms for the construction. We evaluate the iterative algorithm in terms of throughput performance, scalability, and generality over three potential applications. The algorithm i) improves the throughput up to 87.5% for partially deployed FatTree and achieves up to 2.55\times throughput gain for DRing over heuristic algorithms, ii) scales for three considered topologies with a thousand switches, iii) applies to a general structured topology with non-uniform link capacity and server distribution.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Chitavisu23a</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Chitavisutthivong, K. and Supittayapornpong, S. and Namyar, P. and Zhang, M. and Yu, M. and Govindan, R.}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{IEEE/ACM Transactions on Networking}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Optimal Oblivious Routing With Concave Objectives for Structured Networks}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{}</span><span class="p">,</span>
+  <span class="na">number</span> <span class="p">=</span> <span class="s">{01}</span><span class="p">,</span>
+  <span class="na">issn</span> <span class="p">=</span> <span class="s">{1558-2566}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{1-13}</span><span class="p">,</span>
+  <span class="na">keywords</span> <span class="p">=</span> <span class="s">{routing;topology;network topology;servers;throughput;optimization;ieee transactions}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1109/TNET.2023.3264632}</span><span class="p">,</span>
+  <span class="na">publisher</span> <span class="p">=</span> <span class="s">{IEEE Computer Society}</span><span class="p">,</span>
+  <span class="na">address</span> <span class="p">=</span> <span class="s">{Los Alamitos, CA, USA}</span><span class="p">,</span>
+  <span class="na">month</span> <span class="p">=</span> <span class="nv">apr</span><span class="p">,</span>
+  <span class="na">topics</span> <span class="p">=</span> <span class="s">{dcn}</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">iclr</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="Qiu2023" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">MCAL: Minimum Cost Human-Machine Active Labeling</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Hang Qiu, Krishna Chintalapudi, and <em>Ramesh Govindan</em>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In The Eleventh International Conference on Learning Representations </em>, Apr 2023
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="https://openreview.net/forum?id=1FxRPKrH8bw" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Link</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+          </div>
+
+          <!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">Qiu2023</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{MCAL}: Minimum Cost Human-Machine Active Labeling}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Qiu, Hang and Chintalapudi, Krishna and Govindan, Ramesh}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{The Eleventh International Conference on Learning Representations }</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://openreview.net/forum?id=1FxRPKrH8bw}</span><span class="p">,</span>
+  <span class="na">topics</span> <span class="p">=</span> <span class="s">{sensing}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+</ol>
+
   <h2 class="year">2022</h2>
   <ol class="bibliography">
 <li>
@@ -149,7 +277,7 @@
         
         
         <div class="periodical">
-          <em>In SoCC ’22: Proceedings of the ACM Symposium on Cloud Computing</em>, 2022
+          <em>In SoCC ’22: Proceedings of the ACM Symposium on Cloud Computing</em>, Apr 2022
         </div>
         <div class="periodical">
           
@@ -222,7 +350,7 @@
         
         
         <div class="periodical">
-          <em>In IEEE INFOCOM 2022 - IEEE Conference on Computer Communications</em>, 2022
+          <em>In IEEE INFOCOM 2022 - IEEE Conference on Computer Communications</em>, Apr 2022
         </div>
         <div class="periodical">
           
@@ -290,7 +418,7 @@
         
         
         <div class="periodical">
-          <em>In 19th USENIX Symposium on Networked Systems Design and Implementation (NSDI 22)</em>, 2022
+          <em>In 19th USENIX Symposium on Networked Systems Design and Implementation (NSDI 22)</em>, Apr 2022
         </div>
         <div class="periodical">
           
@@ -6349,754 +6477,6 @@ ensures that it uniformly generates better quality solutions at larger problem s
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2012}</span><span class="p">,</span>
   <span class="na">month</span> <span class="p">=</span>  <span class="nv">ju</span><span class="p">,</span>
   <span class="na">projects</span> <span class="p">=</span> <span class="s">{ Medusa }</span>
-<span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
-</li>
-</ol>
-
-  <h2 class="year">2011</h2>
-  <ol class="bibliography">
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">CoNEXT</abbr></div>
-
-        <!-- Entry bib key -->
-        <div id="Jang11a" class="col-sm-8">
-        <!-- Title -->
-        <div class="title"> Snooze: Energy Management in 802.11n WLANs </div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Ki-Young Jang, Shuai Hao, Anmol Sheth, and
-          <span class="more-authors" title="click to view 1 more author" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '1 more author' ? 'Ramesh Govindan' : '1 more author';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">1 more author</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>In  Proceedings of The 7th International Conference on emerging Networking EXperiments and Technologies (ACM CoNEXT 2011) </em>,  de 2011
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p> Increasingly, mobile devices equipped with 802.11n interfaces are being used for a wide variety of applications including bandwidth-intensive HD video streaming. Recent work has shown that 802.11n interfaces are power-hungry, so energy management is an important challenge. 802.11n implementations have additional power states relative to earlier generations of 802.11 technology, so energy management challenges for 802.11n are qualitatively different compared to that faced by prior work.In this paper, we describe the design and implementation of Snooze, an energy management technique for 802.11n which uses two novel and inter-dependent mechanisms: client micro-sleeps and antenna configuration management. In Snooze, the AP monitors traffic on the WLAN and directs client sleep times and durations as well as antenna configurations, without significantly affecting throughput or delay. Snooze achieves 30  85% energy-savings over CAM across workloads ranging from VoIP and video streaming to file downloads and chats. </p>
-          </div>
-<!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">Jang11a</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Jang, Ki-Young and Hao, Shuai and Sheth, Anmol and Govindan, Ramesh}</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{ {Snooze: Energy Management in 802.11n WLANs} }</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{ Proceedings of The 7th International Conference on emerging Networking EXperiments and Technologies (ACM CoNEXT 2011) }</span><span class="p">,</span>
-  <span class="na">month</span> <span class="p">=</span>  <span class="nv">de</span><span class="p">,</span>
-  <span class="na">location</span> <span class="p">=</span> <span class="s">{ Tokyo, Japan }</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2011}</span><span class="p">,</span>
-<span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">Sensys</abbr></div>
-
-        <!-- Entry bib key -->
-        <div id="Flach11a" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">CarMA: Towards Personalized Automotive Tuning</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Tobias Flach, Nilesh Mishra, Luis Pedrosa, and
-          <span class="more-authors" title="click to view 2 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '2 more authors' ? 'Christopher Riesz, Ramesh Govindan' : '2 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">2 more authors</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>In Proceedings of the 9th ACM Conference on Embedded Networked Sensor Systems (SenSys 2011)</em>, Nov 2011
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>
-Wireless sensing and actuation have been explored in many contexts, but the
-automotive setting has received relatively little attention. Automobiles have
-tens of onboard sensors and expose several hundred engine parameters which can
-be tuned (a form of actuation). The optimal tuning for a vehicle can depend
-upon terrain, traffic, and road conditions, but the ability to tune a vehicle
-has only been available to mechanics and enthusiasts. In this paper, we
-describe the design and implementation of CarMA (Car Mobile Assistant), a
-system that provides high-level abstractions for sensing automobile parameters
-and tuning them. Using these abstractions, developers can easily write
-smartphone “apps” to achieve fuel efficiency, responsiveness, or safety goals.
-Users of CarMA can tune their vehicles at the granularity of individual trips,
-a capability we call personalized tuning. We demonstrate through a variety of
-applications written on top of CarMA that personalized tuning can result in
-over 10% gains in fuel efficiency. We achieve this through route-specific or
-driver-specific customizations. Furthermore, CarMA is capable of improving user
-satisfaction by increasing responsiveness when necessary, and promoting
-vehicular safety by appropriately limiting the range of performance available
-to novice or unsafe drivers.</p>
-          </div>
-<!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">Flach11a</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Flach, Tobias and Mishra, Nilesh and Pedrosa, Luis and Riesz, Christopher and Govindan, Ramesh}</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{{CarMA: Towards Personalized Automotive Tuning}}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2011}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of the 9th ACM Conference on Embedded Networked Sensor Systems (SenSys 2011)}</span><span class="p">,</span>
-  <span class="na">location</span> <span class="p">=</span> <span class="s">{Seattle, WA, USA}</span><span class="p">,</span>
-  <span class="na">month</span> <span class="p">=</span> <span class="nv">nov</span><span class="p">,</span>
-<span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"></div>
-
-        <!-- Entry bib key -->
-        <div id="Liu11a" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Optimizing Information Credibility in Social Swarming Applications</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Bin Liu, Peter Terlecky, Amotz Bar-Noy, and
-          <span class="more-authors" title="click to view 2 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '2 more authors' ? 'Ramesh Govindan, Michael J. Neely' : '2 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">2 more authors</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>In Proceedings of IEEE INFOCOM 2011 mini-conference</em>, Apr 2011
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>
-With the advent of smartphone technology, it has
-become possible to conceive of entirely new classes of applications.
-Social swarming, in which users armed with smartphones
-are directed by a central director to report on events in the
-physical world, has several real-world applications. In this paper,
-we focus on the following problem: how does the director optimize
-the selection of reporters to deliver credible corroborating
-information about an event? We first propose a model, based
-on common intuitions of believability, about the credibility of
-information. We then cast the problem as a discrete optimization
-problem, and introduce optimal centralized solutions and an
-approximate solution amenable to decentralized implementation
-whose performance is about 20% off on average from the optimal
-while being 3 orders of magnitude more computationally efficient.
-More interesting, a time-averaged version of the problem is
-amenable to a novel stochastic utility optimization formulation,
-and can be solved optimally, while in some cases yielding
-decentralized solutions.</p>
-          </div>
-<!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">Liu11a</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Liu, Bin and Terlecky, Peter and Bar-Noy, Amotz and Govindan, Ramesh and Neely, Michael J.}</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Optimizing Information Credibility in Social Swarming Applications}}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2011}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of IEEE INFOCOM 2011 mini-conference}</span><span class="p">,</span>
-  <span class="na">location</span> <span class="p">=</span> <span class="s">{Shanghai, China}</span><span class="p">,</span>
-  <span class="na">month</span> <span class="p">=</span> <span class="nv">apr</span><span class="p">,</span>
-<span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">EC</abbr></div>
-
-        <!-- Entry bib key -->
-        <div id="Liquidity11" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Liquidity in credit networks: a little trust goes a long
-               way</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Pranav Dandekar, Ashish Goel, <em>Ramesh Govindan</em>, and
-          <span class="more-authors" title="click to view 1 more author" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '1 more author' ? 'Ian Post' : '1 more author';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">1 more author</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>In ACM Conference on Electronic Commerce</em>, Apr 2011
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-          </div>
-
-          <!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">Liquidity11</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Dandekar, Pranav and Goel, Ashish and Govindan, Ramesh and Post, Ian}</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{Liquidity in credit networks: a little trust goes a long
-                 way}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{ACM Conference on Electronic Commerce}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2011}</span><span class="p">,</span>
-  <span class="na">pages</span> <span class="p">=</span> <span class="s">{147-156}</span>
-<span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">SIGCOMM</abbr></div>
-
-        <!-- Entry bib key -->
-        <div id="Kothari11a" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Finding Protocol Manipulation Attacks</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Nupur Kothari, Ratul Mahajan, Todd Millstein, and
-          <span class="more-authors" title="click to view 2 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '2 more authors' ? 'Ramesh Govindan, Madan Musuvathi' : '2 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">2 more authors</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>In Proceedings of ACM SIGCOMM Symposium on Network Architectures
-                  and Protocols</em>, Aug 2011
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-          </div>
-
-          <!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">Kothari11a</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Kothari, Nupur and Mahajan, Ratul and Millstein, Todd and Govindan, Ramesh and Musuvathi, Madan}</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Finding Protocol Manipulation Attacks}}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2011}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of ACM SIGCOMM Symposium on Network Architectures
-                    and Protocols}</span><span class="p">,</span>
-  <span class="na">location</span> <span class="p">=</span> <span class="s">{Toronto, Canada}</span><span class="p">,</span>
-  <span class="na">month</span> <span class="p">=</span> <span class="nv">aug</span>
-<span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">ToN</abbr></div>
-
-        <!-- Entry bib key -->
-        <div id="Rangwala11a" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Neighborhood-centric congestion control for multi-hop wireless mesh networks</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Sumit Rangwala, Apoorva Jindal, Ki-Young Jang, and
-          <span class="more-authors" title="click to view 2 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '2 more authors' ? 'Konstantinos Psounis, Ramesh Govindan' : '2 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">2 more authors</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>IEEE/ACM Transactions on Networking</em>, Dec 2011
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>
-			Complex interference in static multi-hop wireless
-			mesh networks can adversely affect transport protocol performance.
-			Since TCP does not explicitly account for this, starvation
-			and unfairness can result from the use of TCP over such
-			networks. In this paper, we explore mechanisms for achieving
-			fair and efficient congestion control for multi-hop wireless mesh
-			networks. First, we design an AIMD-based rate-control protocol
-			called Wireless Control Protocol (WCP) which recognizes
-			that wireless congestion is a neighborhood phenomenon, not
-			a node-local one, and appropriately reacts to such congestion.
-			Second, we design a distributed rate controller that estimates
-			the available capacity within each neighborhood, and divides
-			this capacity to contending flows, a scheme we call Wireless
-			Control Protocol with Capacity estimation (WCPCap). Using
-			analysis, simulations, and real deployments, we find that our
-			designs yield rates that are both fair and efficient. WCP assigns
-			rates inversely proportional to the number of bottlenecks a flow
-			passes through while remaining extremely easy to implement.
-			And, an idealized version of WCPCap is max-min fair, whereas
-			a practical implementation of the scheme achieves rates within
-			15% of the max-min optimal rates, while still being distributed
-			and amenable to real implementation.
-	</p>
-          </div>
-<!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Rangwala11a</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Rangwala, Sumit and Jindal, Apoorva and Jang, Ki-Young and Psounis, Konstantinos and Govindan, Ramesh}</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Neighborhood-centric congestion control for multi-hop wireless mesh networks}}</span><span class="p">,</span>
-  <span class="na">journal</span> <span class="p">=</span> <span class="s">{IEEE/ACM Transactions on Networking}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2011}</span><span class="p">,</span>
-  <span class="na">volume</span> <span class="p">=</span> <span class="s">{19}</span><span class="p">,</span>
-  <span class="na">number</span> <span class="p">=</span> <span class="s">{6}</span><span class="p">,</span>
-  <span class="na">pages</span> <span class="p">=</span> <span class="s">{1797--1810}</span><span class="p">,</span>
-  <span class="na">month</span> <span class="p">=</span> <span class="nv">dec</span><span class="p">,</span>
-  <span class="na">theme</span> <span class="p">=</span> <span class="s">{mcast}</span><span class="p">,</span>
-<span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">MobiSys</abbr></div>
-
-        <!-- Entry bib key -->
-        <div id="Ra11a" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Odessa: Enabling Interactive Perception Applications on Mobile Devices</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Moo-Ryong Ra, Anmol Sheth, Lily Mummert, and
-          <span class="more-authors" title="click to view 3 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '3 more authors' ? 'Padmanabhan Pillai, David Wetherall, Ramesh Govindan' : '3 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">3 more authors</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>In Proceedings of the  9th  International Conference on Mobile
-Systems, Applications, and Services (MobiSys’11) </em>, Jun 2011
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>
-			Resource constrained mobile devices need to leverage computation
-			on nearby servers to run responsive applications that recognize
-			objects, people, or gestures from real-time video. The two
-			key questions that impact performance are what computation to offload,
-			and how to structure the parallelism across the mobile device
-			and server. To answer these questions, we develop and evaluate
-			three interactive perceptual applications. We find that offloading
-			and parallelism choices should be dynamic, even for a given application,
-			as performance depends on scene complexity as well as environmental
-			factors such as the network and device capabilities. To
-			this end we develop Odessa, a novel, lightweight, runtime that automatically
-			and adaptively makes offloading and parallelism decisions
-			for mobile interactive perception applications. Our evaluation
-			shows that the incremental greedy strategy of Odessa converges to
-			an operating point that is close to an ideal offline partitioning. It
-			provides more than a 3x improvement in application performance
-			over partitioning suggested by domain experts. Odessa works well
-			across a variety of execution environments, and is agile to changes
-			in the network, device and application inputs.
-    </p>
-          </div>
-<!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">Ra11a</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Ra, Moo-Ryong and Sheth, Anmol and Mummert, Lily and Pillai, Padmanabhan and Wetherall, David and Govindan, Ramesh}</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{Odessa: Enabling Interactive Perception Applications on Mobile Devices}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of the  9th  International Conference on Mobile
-  Systems, Applications, and Services (MobiSys'11) }</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2011}</span><span class="p">,</span>
-  <span class="na">month</span> <span class="p">=</span> <span class="nv">jun</span><span class="p">,</span>
-<span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">MobiSys</abbr></div>
-
-        <!-- Entry bib key -->
-        <div id="Paek11b" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Energy-Efficient Positioning for Smartphones using Cell-ID
-			Sequence Matching</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Jeongyeup Paek, Kyu-Han Kim, Jatinder P. Singh, and
-          <span class="more-authors" title="click to view 1 more author" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '1 more author' ? 'Ramesh Govindan' : '1 more author';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">1 more author</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>In Proceedings of the  9th  International Conference on Mobile
-Systems, Applications, and Services (MobiSys’11) </em>, Jun 2011
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>
-			Many emerging location-aware applications require position information.
-			However, these applications rarely use celltower-based localization
-			because of its inaccuracy, preferring instead to use the
-			more energy-hungry GPS.
-			In this paper, we present CAPS, a Cell-ID Aided Positioning
-			System. CAPS leverages near-continuous mobility and the position
-			history of a user to achieve significantly better accuracy than
-			the celltower-based approach, while keeping energy overhead low.
-			CAPS is designed based on the insight that users exhibit consistency
-			in routes traveled, and that cell-ID transition points that the
-			user experiences can, on a frequently traveled route, uniquely identify
-			position. To this end, CAPS uses a cell-ID sequence match-
-			ing technique to estimate current position based on the history of
-			cell-ID and GPS position sequences that match the current cell-ID
-			sequence. We have implemented CAPS on Android-based smartphones
-			and have extensively evaluated it at different locations, and
-			for different platforms and carriers. Our evaluation results show
-			that CAPS can save more than 90% of the energy spent by the positioning
-			system compared to the case where GPS is always used,
-			while providing reasonably accurate position information with errors
-			less than 20% of the celltower-based scheme.
-    </p>
-          </div>
-<!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">Paek11b</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Paek, Jeongyeup and Kim, Kyu-Han and Singh, Jatinder P. and Govindan, Ramesh}</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Energy-Efficient Positioning for Smartphones using Cell-ID
-  			Sequence Matching}}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of the  9th  International Conference on Mobile
-  Systems, Applications, and Services (MobiSys'11) }</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2011}</span><span class="p">,</span>
-  <span class="na">month</span> <span class="p">=</span> <span class="nv">jun</span><span class="p">,</span>
-<span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"></div>
-
-        <!-- Entry bib key -->
-        <div id="Vieira2011" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Mitigating multi-path fading in a mobile mesh network</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Marcos A.M. Vieira, Matthew E. Taylor, Prateek Tandon, and
-          <span class="more-authors" title="click to view 4 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '4 more authors' ? 'Manish Jain, Ramesh Govindan, Gaurav S. Sukhatme, Milind Tambe' : '4 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">4 more authors</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>Ad Hoc Networks</em>, Jun 2011
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-            <a href="http://www.sciencedirect.com/science/article/B7576-524FSFX-1/2/e98c01879922c7ba8ad68964363f79ef" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Link</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="DOI: 10.1016/j.adhoc.2011.01.014"></span>
-          </div>
-
-          <!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Vieira2011</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{Mitigating multi-path fading in a mobile mesh network}</span><span class="p">,</span>
-  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Ad Hoc Networks}</span><span class="p">,</span>
-  <span class="na">number</span> <span class="p">=</span> <span class="s">{}</span><span class="p">,</span>
-  <span class="na">pages</span> <span class="p">=</span> <span class="s">{ - }</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2011}</span><span class="p">,</span>
-  <span class="na">note</span> <span class="p">=</span> <span class="s">{}</span><span class="p">,</span>
-  <span class="na">issn</span> <span class="p">=</span> <span class="s">{1570-8705}</span><span class="p">,</span>
-  <span class="na">doi</span> <span class="p">=</span> <span class="s">{DOI: 10.1016/j.adhoc.2011.01.014}</span><span class="p">,</span>
-  <span class="na">url</span> <span class="p">=</span> <span class="s">{http://www.sciencedirect.com/science/article/B7576-524FSFX-1/2/e98c01879922c7ba8ad68964363f79ef}</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Vieira, Marcos A.M. and Taylor, Matthew E. and Tandon, Prateek and Jain, Manish and Govindan, Ramesh and Sukhatme, Gaurav S. and Tambe, Milind}</span><span class="p">,</span>
-  <span class="na">keywords</span> <span class="p">=</span> <span class="s">{Experimental and prototype results}</span><span class="p">,</span>
-<span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"></div>
-
-        <!-- Entry bib key -->
-        <div id="Vieira11a" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Towards Autonomous Wireless Backbone Deployment in Highly-Obstructed Environments</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Marcos A. M. Vieira, <em>Ramesh Govindan</em>, and Gaurav S. Sukhatme</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>In IEEE International Conference on Robotics and Automation</em>, May 2011
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-          </div>
-
-          <!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">Vieira11a</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Vieira, Marcos A. M. and Govindan, Ramesh and Sukhatme, Gaurav S.}</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Towards Autonomous Wireless Backbone Deployment in Highly-Obstructed Environments}}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{IEEE International Conference on Robotics and Automation}</span><span class="p">,</span>
-  <span class="na">month</span> <span class="p">=</span> <span class="nv">may</span><span class="p">,</span>
-  <span class="na">location</span> <span class="p">=</span> <span class="s">{China}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2011}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
           </div>
         </div>
