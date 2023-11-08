@@ -483,6 +483,156 @@
 @STRING{wwwj	= "World-Wide Web Journal" }
 @STRING{xerox-parc="XEROX Palo Alto Research Center" }
 
+@InProceedings{	  ubipose,
+  author	= {Pang, Weiwu and Xia, Chunyu and Leong, Branden and Ahmad,
+		  Fawad and Paek, Jeongyeup and Govindan, Ramesh},
+  title		= {UbiPose: Towards Ubiquitous Outdoor AR Pose Tracking Using
+		  Aerial Meshes},
+  year		= {2023},
+  isbn		= {9781450399906},
+  publisher	= {Association for Computing Machinery},
+  address	= {New York, NY, USA},
+  url		= {https://doi.org/10.1145/3570361.3613263},
+  doi		= {10.1145/3570361.3613263},
+  booktitle	= {Proceedings of the 29th Annual International Conference on
+		  Mobile Computing and Networking},
+  articleno	= {49},
+  numpages	= {16},
+  keywords	= {augmented reality, outdoor pose estimation, aerial mesh},
+  location	= {Madrid, Spain},
+  series	= {ACM MobiCom '23}
+}
+
+@InProceedings{	  namyar2024maxminfair,
+  author	= {Pooria Namyar and Behnaz Arzani and Srikanth Kandula and
+		  Santiago Segarra and Daniel Crankshaw and Umesh
+		  Krishnaswamy and Ramesh Govindan and Himanshu Raj},
+  title		= {{S}olving {M}ax-{M}in {F}air {R}esource {A}llocations
+		  {Q}uickly on {L}arge {G}raphs},
+  booktitle	= {21st USENIX Symposium on Networked Systems Design and
+		  Implementation (NSDI 24)},
+  year		= {2024},
+  abstract	= {We consider the max-min fair resource allocation problem.
+		  The best-known solutions use either a sequence of
+		  optimizations or waterfilling, which only applies to a
+		  narrow set of cases. These solutions have become a
+		  practical bottleneck in WAN traffic engineering and cluster
+		  scheduling, especially at larger problem sizes. We improve
+		  both approaches: (1) we show how to convert the
+		  optimization sequence into a single fast optimization, and
+		  (2) we generalize waterfilling to the multi-path case. We
+		  empirically show our new algorithms Pareto-dominate prior
+		  techniques: they produce faster, fairer, and more efficient
+		  allocations. Some of our allocators also have theoretical
+		  guarantees: they trade off a bounded amount of unfairness
+		  for faster allocation. We have deployed our allocators in
+		  Azure's WAN traffic engineering pipeline, where we preserve
+		  solution quality and achieve a roughly 3× speedup.},
+  abbr		= {NSDI},
+  url		= {https://arxiv.org/abs/2310.09699},
+  selected	= {yes}
+}
+
+@Article{	  aerotraj,
+  author	= {Ahmad, Fawad and Shin, Christina Suyong and Ghosh, Rajrup
+		  and D'Ambrosio, John and Chai, Eugene and Sundaresan,
+		  Karthikeyan and Govindan, Ramesh},
+  title		= {AeroTraj: Trajectory Planning for Fast, and Accurate 3D
+		  Reconstruction Using a Drone-Based LiDAR},
+  year		= {2023},
+  issue_date	= {September 2023},
+  publisher	= {Association for Computing Machinery},
+  address	= {New York, NY, USA},
+  volume	= {7},
+  number	= {3},
+  url		= {https://doi.org/10.1145/3610911},
+  doi		= {10.1145/3610911},
+  abstract	= {This paper presents AeroTraj, a system that enables fast,
+		  accurate, and automated reconstruction of 3D models of
+		  large buildings using a drone-mounted LiDAR. LiDAR point
+		  clouds can be used directly to assemble 3D models if their
+		  positions are accurately determined. AeroTraj uses SLAM for
+		  this, but must ensure complete and accurate reconstruction
+		  while minimizing drone battery usage. Doing this requires
+		  balancing competing constraints: drone speed, height, and
+		  orientation. AeroTraj exploits building geometry in
+		  designing an optimal trajectory that incorporates these
+		  constraints. Even with an optimal trajectory, SLAM's
+		  position error can drift over time, so AeroTraj tracks
+		  drift in-flight by offloading computations to the cloud and
+		  invokes a re-calibration procedure to minimize error.
+		  AeroTraj can reconstruct large structures with
+		  centimeter-level accuracy and with an average end-to-end
+		  latency below 250 ms, significantly outperforming the state
+		  of the art.},
+  journal	= {Proc. ACM Interact. Mob. Wearable Ubiquitous Technol.},
+  month		= {sep},
+  articleno	= {83},
+  numpages	= {28},
+  keywords	= {Mapping, Trajectory Planning, 3D Reconstruction,
+		  Localization},
+  abbr		= {Ubicomp/IMWUT}
+}
+
+@Article{	  nora23,
+  author	= {Grimm, Donald K. and Bai, Fan and Chen, Jinzhu and Yu, Bo
+		  and Saraydar, Cem and Govindan, Ramesh},
+  journal	= {IEEE Open Journal of Vehicular Technology},
+  title		= {NORA: Towards Large-Scale Vehicular Analytics for Driving
+		  Environment Monitoring/Assessment},
+  year		= {2023},
+  volume	= {4},
+  number	= {},
+  pages		= {618-632},
+  doi		= {10.1109/OJVT.2023.3296021}
+}
+
+@InProceedings{	  dragonfly,
+  author	= {Ghabashneh, Ehab and Bothra, Chandan and Govindan, Ramesh
+		  and Ortega, Antonio and Rao, Sanjay},
+  title		= {Dragonfly: Higher Perceptual Quality For Continuous 360°
+		  Video Playback},
+  year		= {2023},
+  isbn		= {9798400702365},
+  publisher	= {Association for Computing Machinery},
+  address	= {New York, NY, USA},
+  url		= {https://doi.org/10.1145/3603269.3604876},
+  doi		= {10.1145/3603269.3604876},
+  abstract	= {When streaming 360° video, it is possible to reduce
+		  bandwidth by 5\texttimes{} with approaches that spatially
+		  segment video into tiles and only stream the user's
+		  viewport. Unfortunately, it is difficult to accurately
+		  predict a user's viewport even 2--3 seconds before
+		  playback. This results in rebuffering events owing to
+		  misprediction of a user's viewport or network bandwidth
+		  dips, which hurts interactive experience. However, avoiding
+		  rebuffering by naively skipping tiles that do not arrive by
+		  the playback deadline may lead to incomplete viewports and
+		  degraded experience.In this paper, we describe Dragonfly, a
+		  new 360° system that preserves interactive experience by
+		  avoiding playback stalls while maintaining high perceptual
+		  quality. Dragonfly prudently skips tiles using a model that
+		  defines an overall utility function to decide which tiles
+		  to fetch, and at which qualities they should be fetched,
+		  with the goal of optimizing user experience. To minimize
+		  incomplete viewports, it also fetches a low quality masking
+		  stream. Using a user study with 26 users and
+		  emulation-based experiments we show that Dragonfly has
+		  higher quality, and lower overheads, than state-of-the-art
+		  360° streaming approaches. For instance, in our study,
+		  65\% of sessions have a rating of 4 or higher
+		  (Good/Excellent) with Dragonfly, while only 16\% of
+		  sessions with Pano, and 13\% of sessions with Flare achieve
+		  this rating.},
+  booktitle	= {Proceedings of the ACM SIGCOMM 2023 Conference},
+  pages		= {516–532},
+  numpages	= {17},
+  keywords	= {360° videos, video streaming, adaptive bit-rate (ABR)
+		  algorithms},
+  location	= {New York, NY, USA},
+  series	= {ACM SIGCOMM '23}
+}
+
 @Article{	  chitavisu23a,
   author	= {K. Chitavisutthivong and S. Supittayapornpong and P.
 		  Namyar and M. Zhang and M. Yu and R. Govindan},
