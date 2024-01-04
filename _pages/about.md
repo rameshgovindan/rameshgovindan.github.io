@@ -18,12 +18,14 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
+> **Office:** SAL 212
+> **Office Hours**: MW 3-3:50pm
+
 ## brief bio
 
 Ramesh Govindan is the Northrop Grumman Chair in Engineering and Professor of Computer Science and Electrical Engineering at the University of Southern California. Dr. Govindan received the B.Tech degree from the Indian Institute of Technology at Madras, and the M.S. and Ph.D. degrees from the University of California at Berkeley. Prior to joining USC he was a member of the technical staff at Bell Communications Research, and a project leader at USC’s Information Sciences Institute and at the International Computer Science Institute at Berkeley.
 
 Dr. Govindan’s research has focused on scalable and robust routing infrastructures in large networks such as the Internet, on the structural properties of the Internet, and on the architectures and programming systems for wireless and mobile networks. He is a Fellow of the ACM and of the IEEE, the recipient of the 2018 IEEE Internet Award, a former Editor-in-Chief of the IEEE Transactions on Mobile Computing, and a Distinguished Alumnus of the Indian Institute of Technology, Madras.
 
-> **Spring 2024 Office Hours**: MW 3-3:50pm
 
 
