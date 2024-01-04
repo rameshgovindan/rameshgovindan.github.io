@@ -18,7 +18,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-> **Office:** SAL 212
+> **Office:** SAL 212  
 > **Office Hours**: MW 3-3:50pm
 
 ## brief bio
