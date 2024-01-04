@@ -28,3 +28,9 @@ Ramesh Govindan is the Northrop Grumman Chair in Engineering and Professor of Co
 
 Dr. Govindan’s research has focused on scalable and robust routing infrastructures in large networks such as the Internet, on the structural properties of the Internet, and on the architectures and programming systems for wireless and mobile networks. He is a Fellow of the ACM and of the IEEE, the recipient of the 2018 IEEE Internet Award, a former Editor-in-Chief of the IEEE Transactions on Mobile Computing, and a Distinguished Alumnus of the Indian Institute of Technology, Madras.
 
+--
+
+**Spring 2024 Office Hours**: MW 3-3:50pm
+
+__
+
