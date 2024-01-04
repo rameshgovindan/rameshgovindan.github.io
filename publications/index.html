@@ -111,10 +111,186 @@
           </header>
 
           <article>
-            <p>For publications prior to 2011, see <a href="https://dblp.org/pid/g/RameshGovindan.html" rel="external nofollow noopener" target="_blank">DBLP</a>.</p>
+            <p>For publications prior to 2012, see <a href="https://dblp.org/pid/g/RameshGovindan.html" rel="external nofollow noopener" target="_blank">DBLP</a>.</p>
 
 <!-- _pages/publications.md -->
 <div class="publications">
+  <h2 class="year">2024</h2>
+  <ol class="bibliography">
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">NSDI</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="namyar2024metaopt" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Finding Adversarial Inputs for Heuristics using
+                  Multi-level Optimization</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Pooria Namyar, Behnaz Arzani, Ryan Beckett, and
+          <span class="more-authors" title="click to view 5 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '5 more authors' ? 'Santiago Segarra, Himanshu Raj, Umesh Krishnaswamy, Ramesh Govindan, Srikanth Kandula' : '5 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">5 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In 21st USENIX Symposium on Networked Systems Design and
+                  Implementation (NSDI 24)</em>, 2024
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="https://arxiv.org/abs/2311.12779" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Link</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Production systems use heuristics because they are faster or
+                  scale better than their optimal counterparts. Yet,
+                  practitioners are often unaware of the performance gap between
+                  a heuristic and the optimum or between two heuristics in
+                  realistic scenarios. We present MetaOpt, a system that helps
+                  analyze heuristics. Users specify the heuristic and the
+                  optimal (or another heuristic) as input, and MetaOpt
+                  automatically encodes these efficiently for a solver to find
+                  performance gaps and their corresponding adversarial inputs.
+                  Its suite of built-in optimizations helps it scale its
+                  analysis to practical problem sizes. To show it is versatile,
+                  we used MetaOpt to analyze heuristics from three domains
+                  (traffic engineering, vector bin packing, and packet
+                  scheduling). We found a production traffic engineering
+                  heuristic can require 30% more capacity than the optimal to
+                  satisfy realistic demands. Based on the patterns in the
+                  adversarial inputs MetaOpt produced, we modified the heuristic
+                  to reduce its performance gap by 12.5×. We examined
+                  adversarial inputs to a vector bin packing heuristic and
+                  proved a new lower bound on its performance.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">namyar2024metaopt</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Namyar, Pooria and Arzani, Behnaz and Beckett, Ryan and Segarra, Santiago and Raj, Himanshu and Krishnaswamy, Umesh and Govindan, Ramesh and Kandula, Srikanth}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{F}inding {A}dversarial {I}nputs for {H}euristics using
+                    {M}ulti-level {O}ptimization}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{21st USENIX Symposium on Networked Systems Design and
+                    Implementation (NSDI 24)}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2024}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">NSDI</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="namyar2024maxminfair" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Solving Max-Min Fair Resource Allocations
+		  Quickly on Large Graphs</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Pooria Namyar, Behnaz Arzani, Srikanth Kandula, and
+          <span class="more-authors" title="click to view 5 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '5 more authors' ? 'Santiago Segarra, Daniel Crankshaw, Umesh Krishnaswamy, Ramesh Govindan, Himanshu Raj' : '5 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">5 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In 21st USENIX Symposium on Networked Systems Design and
+		  Implementation (NSDI 24)</em>, 2024
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="https://arxiv.org/abs/2310.09699" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Link</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>We consider the max-min fair resource allocation problem.
+		  The best-known solutions use either a sequence of
+		  optimizations or waterfilling, which only applies to a
+		  narrow set of cases. These solutions have become a
+		  practical bottleneck in WAN traffic engineering and cluster
+		  scheduling, especially at larger problem sizes. We improve
+		  both approaches: (1) we show how to convert the
+		  optimization sequence into a single fast optimization, and
+		  (2) we generalize waterfilling to the multi-path case. We
+		  empirically show our new algorithms Pareto-dominate prior
+		  techniques: they produce faster, fairer, and more efficient
+		  allocations. Some of our allocators also have theoretical
+		  guarantees: they trade off a bounded amount of unfairness
+		  for faster allocation. We have deployed our allocators in
+		  Azure’s WAN traffic engineering pipeline, where we preserve
+		  solution quality and achieve a roughly 3× speedup.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">namyar2024maxminfair</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Namyar, Pooria and Arzani, Behnaz and Kandula, Srikanth and Segarra, Santiago and Crankshaw, Daniel and Krishnaswamy, Umesh and Govindan, Ramesh and Raj, Himanshu}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{S}olving {M}ax-{M}in {F}air {R}esource {A}llocations
+  		  {Q}uickly on {L}arge {G}raphs}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{21st USENIX Symposium on Networked Systems Design and
+  		  Implementation (NSDI 24)}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2024}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+</ol>
+
   <h2 class="year">2023</h2>
   <ol class="bibliography">
 <li>
@@ -6533,708 +6709,6 @@
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Vieira, Marcos A.M. and Govindan, Ramesh and Sukhatme, Gaurav S.}</span><span class="p">,</span>
   <span class="na">keywords</span> <span class="p">=</span> <span class="s">{Wireless Backbone Deployment}</span>
 <span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
-</li>
-</ol>
-
-  <h2 class="year">2012</h2>
-  <ol class="bibliography">
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"></div>
-
-        <!-- Entry bib key -->
-        <div id="ning12" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Forensic Analysis of Packet Losses in Wireless
-		  Networks</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Jianxia Ning, Shailendra Singh, Konstantinos Pelechrinis, and
-          <span class="more-authors" title="click to view 3 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '3 more authors' ? 'Bin Liu, Srikanth V. Krishnamurthy, Ramesh Govindan' : '3 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">3 more authors</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>In Proc. of IEEE ICNP</em>,  ap 2012
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-          </div>
-
-          <!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">ning12</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Ning, Jianxia and Singh, Shailendra and Pelechrinis, Konstantinos and Liu, Bin and Krishnamurthy, Srikanth V. and Govindan, Ramesh}</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Forensic Analysis of Packet Losses in Wireless
-  		  Networks}}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proc. of IEEE ICNP}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2012}</span>
-<span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"></div>
-
-        <!-- Entry bib key -->
-        <div id="papa12" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Distortion-Resilient Routing for Video Flows in Wireless
-		  Multi-hop Networks</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        George Papageorgiou, Shailendra Singh, Srikanth V. Krishnamurthy, and
-          <span class="more-authors" title="click to view 2 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '2 more authors' ? 'Ramesh Govindan, Tom La Porta' : '2 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">2 more authors</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>In Proc. of IEEE ICNP</em>,  ap 2012
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-          </div>
-
-          <!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">papa12</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Papageorgiou, George and Singh, Shailendra and Krishnamurthy, Srikanth V. and Govindan, Ramesh and Porta, Tom La}</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Distortion-Resilient Routing for Video Flows in Wireless
-  		  Multi-hop Networks}}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proc. of IEEE ICNP}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2012}</span>
-<span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">IMC</abbr></div>
-
-        <!-- Entry bib key -->
-        <div id="flach12a" class="col-sm-8">
-        <!-- Title -->
-        <div class="title"> Quantifying Violations of Destination-based Forwarding
-		  in the Internet </div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Tobias Flach, Ethan Katz-Bassett, and <em>Ramesh Govindan</em>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>In  Proceedings of the ACM Internet Measurement Conference
-		  (IMC ’12) </em>,  no 2012
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-          </div>
-
-          <!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">flach12a</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Flach, Tobias and Katz-Bassett, Ethan and Govindan, Ramesh}</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{ {Quantifying Violations of Destination-based Forwarding
-  		  in the Internet} }</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{ Proceedings of the ACM Internet Measurement Conference
-  		  (IMC '12) }</span><span class="p">,</span>
-  <span class="na">month</span> <span class="p">=</span>  <span class="nv">no</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2012}</span><span class="p">,</span>
-  		  <span class="p">}</span>
-<span class="c">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"></div>
-
-        <!-- Entry bib key -->
-        <div id="liu12d" class="col-sm-8">
-        <!-- Title -->
-        <div class="title"> Towards Systematic Roadmaps for Networked Systems </div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Bin Liu, Hsunwei Hsiung, Da Cheng, and
-          <span class="more-authors" title="click to view 2 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '2 more authors' ? 'Ramesh Govindan, Sandeep Gupta' : '2 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">2 more authors</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>In  Proceedings of the 11th ACM Workshop on Hot Topics in
-		  Networks </em>,  oc 2012
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-          </div>
-
-          <!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">liu12d</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Liu, Bin and Hsiung, Hsunwei and Cheng, Da and Govindan, Ramesh and Gupta, Sandeep}</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{ {Towards Systematic Roadmaps for Networked Systems} }</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{ Proceedings of the 11th ACM Workshop on Hot Topics in
-  		  Networks }</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2012}</span><span class="p">,</span>
-  <span class="na">month</span> <span class="p">=</span>  <span class="nv">oc</span><span class="p">,</span>
-  		  <span class="p">}</span>
-<span class="c">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"></div>
-
-        <!-- Entry bib key -->
-        <div id="liu12c" class="col-sm-8">
-        <!-- Title -->
-        <div class="title"> Timely Report Delivery in Social Swarming Applications
-		  </div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Bin Liu, Peter Terlecky, Xing Xu, and
-          <span class="more-authors" title="click to view 3 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '3 more authors' ? 'Amotz Bar-Noy, Ramesh Govindan, Dror Rawitz' : '3 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">3 more authors</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>In  IEEE Conference on Distributed Computing in Sensor
-		  Systems (DCOSS) </em>,  oc 2012
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-          </div>
-
-          <!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">liu12c</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{ {Timely Report Delivery in Social Swarming Applications}
-  		  }</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Liu, Bin and Terlecky, Peter and Xu, Xing and Bar-Noy, Amotz and Govindan, Ramesh and Rawitz, Dror}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{ IEEE Conference on Distributed Computing in Sensor
-  		  Systems (DCOSS) }</span><span class="p">,</span>
-  <span class="na">pages</span> <span class="p">=</span> <span class="s">{ 75--82 }</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2012}</span><span class="p">,</span>
-  		  <span class="p">}</span>
-<span class="c">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"></div>
-
-        <!-- Entry bib key -->
-        <div id="liu12b" class="col-sm-8">
-        <!-- Title -->
-        <div class="title"> Optimizing Information Credibility in Social Swarming
-		  Applications </div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Bin Liu, Peter Terlecky, Amotz Bar-Noy, and
-          <span class="more-authors" title="click to view 3 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '3 more authors' ? 'Ramesh Govindan, Michael J. Neely, Dror Rawitz' : '3 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">3 more authors</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em> IEEE Transactions on Parallel and Distributed Systems </em>,  oc 2012
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-          </div>
-
-          <!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">liu12b</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Liu, Bin and Terlecky, Peter and Bar-Noy, Amotz and Govindan, Ramesh and Neely, Michael J. and Rawitz, Dror}</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{ {Optimizing Information Credibility in Social Swarming
-  		  Applications} }</span><span class="p">,</span>
-  <span class="na">journal</span> <span class="p">=</span> <span class="s">{ IEEE Transactions on Parallel and Distributed Systems }</span><span class="p">,</span>
-  <span class="na">volume</span> <span class="p">=</span> <span class="s">{ 23 }</span><span class="p">,</span>
-  <span class="na">issn</span> <span class="p">=</span> <span class="s">{ 1045-9219 }</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2012}</span><span class="p">,</span>
-  <span class="na">pages</span> <span class="p">=</span> <span class="s">{ 1147-1158 }</span><span class="p">,</span>
-  <span class="na">publisher</span> <span class="p">=</span> <span class="s">{ IEEE Computer Society }</span><span class="p">,</span>
-  <span class="na">address</span> <span class="p">=</span> <span class="s">{ Los Alamitos, CA, USA }</span><span class="p">,</span>
-  		  <span class="p">}</span>
-<span class="c">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"></div>
-
-        <!-- Entry bib key -->
-        <div id="mos12" class="col-sm-8">
-        <!-- Title -->
-        <div class="title"> vCRIB: Virtual Cloud Rule Information Base </div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Masoud Moshref, Minlan Yu, Abhishek Sharma, and
-          <span class="more-authors" title="click to view 1 more author" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '1 more author' ? 'Ramesh Govindan' : '1 more author';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">1 more author</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>In  Proceedings of the 4th USENIX Workshop on Hot Topics in
-		  Cloud Computing (HotClout’12) </em>,  ju 2012
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p> Cloud operators increasingly need many fine-grained rules
-		  to better control individual network flows for various
-		  management tasks. While previous approaches have advocated
-		  placing rules either on hypervisors or switches, we argue
-		  that future data centers would benefit from leveraging rule
-		  processing capabilities at both for better scalability and
-		  performance. In this paper, we propose vCRIB, a virtualized
-		  Cloud Rule Information Base that allows operators to freely
-		  define different management policies without the need to
-		  consider underlying resource constraints. The challenge in
-		  our approach is the design of a vCRIB manager that
-		  automatically partitions and places rules at both
-		  hypervisors and switches to achieve a good trade-off
-		  between resource usage and performance. </p>
-          </div>
-<!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">mos12</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Moshref, Masoud and Yu, Minlan and Sharma, Abhishek and Govindan, Ramesh}</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{ {vCRIB: Virtual Cloud Rule Information Base} }</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{ Proceedings of the 4th USENIX Workshop on Hot Topics in
-  		  Cloud Computing (HotClout'12) }</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2012}</span><span class="p">,</span>
-  <span class="na">month</span> <span class="p">=</span>  <span class="nv">ju</span><span class="p">,</span>
-  		  <span class="p">}</span><span class="c">,</span>
-  <span class="c">projects = { VCRIB }</span>
-<span class="c">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">SenSys</abbr></div>
-
-        <!-- Entry bib key -->
-        <div id="liu12a" class="col-sm-8">
-        <!-- Title -->
-        <div class="title"> Cloud-Enabled Privacy-Preserving Collaborative Learning
-		  for Mobile Sensing </div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Bin Liu, Yurong Jiang, Fei Sha, and
-          <span class="more-authors" title="click to view 1 more author" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '1 more author' ? 'Ramesh Govindan' : '1 more author';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">1 more author</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>In  Proceedings of the 10th ACM Conference on Embedded
-		  Networked Sensor Systems (SenSys’12) to appear </em>,  no 2012
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p> to be updated </p>
-          </div>
-<!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">liu12a</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Liu, Bin and Jiang, Yurong and Sha, Fei and Govindan, Ramesh}</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{ {Cloud-Enabled Privacy-Preserving Collaborative Learning
-  		  for Mobile Sensing} }</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{ Proceedings of the 10th ACM Conference on Embedded
-  		  Networked Sensor Systems (SenSys'12) to appear }</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2012}</span><span class="p">,</span>
-  <span class="na">month</span> <span class="p">=</span>  <span class="nv">no</span><span class="p">,</span>
-  		  <span class="p">}</span><span class="c">,</span>
-  <span class="c">projects = { Pickle }</span>
-<span class="c">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"></div>
-
-        <!-- Entry bib key -->
-        <div id="hao12a" class="col-sm-8">
-        <!-- Title -->
-        <div class="title"> Estimating Android Applications’ CPU Energy Usage via
-		  Bytecode Profiling </div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Shuai Hao, Ding Li, William G.J. Halfond, and
-          <span class="more-authors" title="click to view 1 more author" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '1 more author' ? 'Ramesh Govindan' : '1 more author';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">1 more author</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>In  First International Workshop on Green and Sustainable
-		  Software, in conjunction with the 34th International
-		  Conference on Software Engineering (ICSE) 2012 to appear </em>,  ju 2012
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p> Optimizing the energy efficiency of mobile applications
-		  can greatly increase user satisfaction. However, developers
-		  lack easily applied tools for estimating the energy
-		  consumption of their applications. This paper proposes a
-		  new approach, eCalc, that is lightweight in terms of its
-		  developer requirements and provides code-level estimates of
-		  energy consumption. The approach achieves this using
-		  estimation techniques based on program analysis of the
-		  mobile application. In evaluation, eCalc is able to
-		  estimate energy consumption within 9.5% of the ground
-		  truth for a set of mobile applications. Additionally, eCalc
-		  provides useful and meaningful feedback to the developer
-		  that helps to characterize energy consumption of the
-		  application. </p>
-          </div>
-<!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">hao12a</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Hao, Shuai and Li, Ding and Halfond, William G.J. and Govindan, Ramesh}</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{ {Estimating Android Applications' CPU Energy Usage via
-  booktitle = { First International Workshop on Green and Sustainable
-  		  Software, in conjunction with the 34th International
-  		  Conference on Software Engineering (ICSE) 2012 to appear },
-  month =  ju,
-  year = {2012},
-  		  },
-  projects = { eLens }
-}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">MobiSys</abbr></div>
-
-        <!-- Entry bib key -->
-        <div id="ra12a" class="col-sm-8">
-        <!-- Title -->
-        <div class="title"> Medusa: A Programming Framework for Crowd-Sensing
-		  Applications </div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Moo-Ryong Ra, Bin Liu, Tom La Porta, and
-          <span class="more-authors" title="click to view 1 more author" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '1 more author' ? 'Ramesh Govindan' : '1 more author';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">1 more author</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>In  Proceedings of the 10th International Conference on
-		  Mobile Systems, Applications, and Services (MobiSys’12) </em>,  ju 2012
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p> The ubiquity of smartphones and their on-board sensing
-		  capabilities motivates crowd-sensing, a capability which
-		  harnessesthe power of crowds to collect sensor data from
-		  alarge number of mobile phone users. Unlike previous workon
-		  wireless sensing, crowd-sensing poses several novel
-		  requirements:support for humans-in-the-loop to trigger
-		  sensingactions or review results, the need for incentives,
-		  as wellas privacy and security. In this paper, we design
-		  and implementMedusa, a novel programming framework for
-		  crowdsensing that satisfies these requirements. Medusa
-		  provideshigh-level abstractions for specifying the steps
-		  required tocomplete a crowd-sensing task, and employs a
-		  distributedruntime system that coordinates the execution of
-		  these tasksbetween smartphones and a cluster on the cloud.
-		  We haveimplemented ten crowd-sensing tasks on a prototype
-		  of Medusa.We find that Medusa task descriptions are two
-		  orders of magnitudesmaller than standalone systems required
-		  to implementthose crowd-sensing tasks, and the runtime has
-		  lowoverhead and is robust to dynamics and resource attacks.
-		  </p>
-          </div>
-<!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">ra12a</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Ra, Moo-Ryong and Liu, Bin and Porta, Tom La and Govindan, Ramesh}</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{ {Medusa: A Programming Framework for Crowd-Sensing
-  		  Applications} }</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{ Proceedings of the 10th International Conference on
-  		  Mobile Systems, Applications, and Services (MobiSys'12) }</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2012}</span><span class="p">,</span>
-  <span class="na">month</span> <span class="p">=</span>  <span class="nv">ju</span><span class="p">,</span>
-  		  <span class="p">}</span><span class="c">,</span>
-  <span class="c">projects = { Medusa }</span>
-<span class="c">}</span></code></pre></figure>
           </div>
         </div>
       </div>
