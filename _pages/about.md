@@ -16,6 +16,7 @@ profile:
       <p>SAL 212</p>
       <p>941 Bloom Walk</p>
       <p>Los Angeles, CA 90089</p>
+	  <p>sp2024 Office Hours: MW 3-3:50pm</p>
     
 news: false  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
