@@ -2,6 +2,7 @@
  "papers"
  (lambda ()
    (LaTeX-add-bibitems
+    "namyar2024metaopt"
     "ubipose"
     "namyar2024maxminfair"
     "aerotraj"
