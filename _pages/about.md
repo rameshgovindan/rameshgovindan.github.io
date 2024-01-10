@@ -19,7 +19,7 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 > **Office:** SAL 212  
-> **Office Hours**: MW 3-3:50pm
+> **Office Hours**: M 12-2pm
 
 ## brief bio
 
