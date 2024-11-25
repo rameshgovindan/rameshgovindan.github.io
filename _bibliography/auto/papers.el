@@ -1,7 +1,13 @@
+;; -*- lexical-binding: t; -*-
+
 (TeX-add-style-hook
  "papers"
  (lambda ()
    (LaTeX-add-bibitems
+    "namyar2025mitigation"
+    "lovelock"
+    "shin2024recap"
+    "namyar2024learning"
     "namyar2024metaopt"
     "ubipose"
     "namyar2024maxminfair"
