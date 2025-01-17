@@ -8,6 +8,7 @@
     "lovelock"
     "shin2024recap"
     "namyar2024learning"
+    "AhmadCIP"
     "namyar2024metaopt"
     "ubipose"
     "namyar2024maxminfair"
