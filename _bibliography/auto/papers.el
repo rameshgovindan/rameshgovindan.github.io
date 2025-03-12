@@ -4,6 +4,7 @@
  "papers"
  (lambda ()
    (LaTeX-add-bibitems
+    "Shihan2025Tiered"
     "bazzaz2025hotspots"
     "namyar2025mitigation"
     "lovelock"

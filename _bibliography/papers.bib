@@ -483,25 +483,43 @@
 @STRING{wwwj	= "World-Wide Web Journal" }
 @STRING{xerox-parc="XEROX Palo Alto Research Center" }
 
-@inproceedings{bazzaz2025hotspots,
-  title={Preventing Network Bottlenecks: Accelerating Datacenter Services with Hotspot-Aware Placement for Compute and Storage},
-  author={Bazzaz, Hamid and Pang, Weiwu and Bi, Yingjie and Yu, Minlan and
+@Article{Shihan2025Tiered,
+  author = 	 {Lin, Shihan and Zhou, Yi and Zhang, Xiao and Arnold, Todd and Govindan, Ramesh and Yang, Xiaowei},
+  title = 	 {Tiered Cloud Routing: Methodology, Latency, and Improvement},
+  journal = 	 {Proc. ACM Meas. Anal. Comput. Syst.},
+  year = 	 2025,
+  volume = 	 9,
+  number = 	 1,
+  month = 	 mar,
+  issue_date = 	 {March 2025},
+  publisher = 	 {Association for Computing Machinery},
+  address = 	 {New York, NY, USA},
+  url = 	 {https://doi.org/10.1145/3711705},
+  doi = 	 {10.1145/3711705},
+  abstract = 	 {Large cloud providers including AWS, Azure, and Google Cloud offer two tiers of network services to their customers: one class uses the providers' private wide area networks (WAN-transit) to carry a customer's traffic as much as possible, and the other uses the public internet (inet-transit). Little is known about how each cloud provider configures its network to offer different transit services, how well these services work, and whether the quality of those services can be further improved. In this work, we conduct a large-scale study to answer these questions. Using RIPE Atlas probes as vantage points, we explore how traffic enters and leaves each cloud's WAN. In addition, we measure the access latency of the WAN-transit and the inet-transit service of each cloud and compare it with that of an emulated performance-based routing strategy. Our study shows that despite the cloud providers' intention to carry customers' traffic on its WAN to the maximum extent possible, for about 12\% (Azure) and 13\% (Google) of our vantage points, traffic exits the cloud WAN early at cloud edges more than 5000km away from the vantage points' nearest cloud edges. In contrast, more than 84\% (AWS), 78\% (Azure), and 81\% (Google) of vantage points enter a cloud WAN within a 500km radius of their respective locations. Moreover, we find that cloud providers employ different routing strategies to implement the inet-transit service, leading to transit policies that may deviate from their advertised service descriptions. Finally, we find that a performance-based routing strategy can significantly reduce latencies in all three cloud providers for 4\% to 85\% of vantage point and cloud region pairs.},
+  articleno = 	 12,
+  numpages = 	 41,
+  keywords = 	 {bgp, cloud routing, internet routing, wide area network}}
+
+@InProceedings{bazzaz2025hotspots,
+  author = 	 {Bazzaz, Hamid and Pang, Weiwu and Bi, Yingjie and Yu, Minlan and
                   Govindan, Ramesh and Cardwell, Neal and Dukkipati, Nandita and
                   Tsai, Meng-Jung and DeForeest, Chris and Jin, Yuxue Jin and
                   Carver, Charles and Kopański, Jan and Cheng, Liqun},
-  booktitle = {22nd USENIX Symposium on Networked Systems Design and Implementation (NSDI 25)},
-  year={2025},
-  abbr={NSDI},
-  selected = {true},
+  title = 	 {Preventing Network Bottlenecks: Accelerating Datacenter Services with Hotspot-Aware Placement for Compute and Storage},
+  booktitle = 	 {22nd USENIX Symposium on Networked Systems Design and Implementation (NSDI 25)},
+  year = 	 2025,
+  abbr = 	 {NSDI},
+  selected = 	 {true},
 }
 
-@inproceedings{namyar2025mitigation,
-  title={Enhancing Network Failure Mitigation with Performance-Aware Ranking},
-  author={Namyar, Pooria and Ghavidel, Arvin and Crankshaw, Daniel and Berger, Daniel S and Hsieh, Kevin and Kandula, Srikanth and Govindan, Ramesh and Arzani, Behnaz},
-  booktitle = {22nd USENIX Symposium on Networked Systems Design and Implementation (NSDI 25)},
-  year={2025},
-  abbr={NSDI},
-  selected = {true},
+@InProceedings{namyar2025mitigation,
+  author = 	 {Namyar, Pooria and Ghavidel, Arvin and Crankshaw, Daniel and Berger, Daniel S and Hsieh, Kevin and Kandula, Srikanth and Govindan, Ramesh and Arzani, Behnaz},
+  title = 	 {Enhancing Network Failure Mitigation with Performance-Aware Ranking},
+  booktitle = 	 {22nd USENIX Symposium on Networked Systems Design and Implementation (NSDI 25)},
+  year = 	 2025,
+  abbr = 	 {NSDI},
+  selected = 	 {true},
 }
 
 @InProceedings{lovelock,
