@@ -4,6 +4,8 @@
  "papers"
  (lambda ()
    (LaTeX-add-bibitems
+    "liang2025granular"
+    "CATSNamo25"
     "Shihan2025Tiered"
     "bazzaz2025hotspots"
     "namyar2025mitigation"
