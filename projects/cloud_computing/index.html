@@ -120,6 +120,200 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">SIGCOMM</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="zenith25" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">ZENITH: Towards A Formally Verified Highly-Available
+		  Control Plane</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Pooria Namyar, Arvin Ghavidel, Mingyang Zhang, and
+          <span class="more-authors" title="click to view 4 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '4 more authors' ? 'Harsha V. Madhyastha, Srivatsan Ravi, Chao Wang, Ramesh Govindan' : '4 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">4 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In Proceedings of the ACM SIGCOMM 2025 Conference</em>, 2025
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="https://doi.org/10.1145/3718958.3750533" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Link</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1145/3718958.3750533"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Today, large-scale software-defined networks use
+		  microservice-based controllers. Bugs in these controllers
+		  can reduce network availability by making the data plane
+		  state inconsistent with the high-level intent. To recover
+		  from such inconsistencies, modern controllers periodically
+		  reconcile the state of all the switches with the desired
+		  intent. However, periodic reconciliation limits the
+		  availability and performance of the network at scale. We
+		  introduce Zenith, a microservice-based controller that
+		  avoids inconsistencies by design rather than always relying
+		  on recovery mechanisms. We have formally verified Zenith’s
+		  specifications and have proved that it ensures the network
+		  state will eventually be consistent with intent. We
+		  automatically generate Zenith’s code from its specification
+		  to minimize the likelihood of errors in the final
+		  implementation. Zenith’s guarantees and abstractions also
+		  enable developers to independently verify SDN applications
+		  and ensure end-to-end safety and correctness. Zenith
+		  resolves inconsistencies 5\texttimes faster than today’s
+		  designs and significantly improves availability.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">zenith25</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Namyar, Pooria and Ghavidel, Arvin and Zhang, Mingyang and Madhyastha, Harsha V. and Ravi, Srivatsan and Wang, Chao and Govindan, Ramesh}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{ZENITH: Towards A Formally Verified Highly-Available
+  		  Control Plane}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of the ACM SIGCOMM 2025 Conference}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2025}</span><span class="p">,</span>
+  <span class="na">series</span> <span class="p">=</span> <span class="s">{SIGCOMM '25}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{409–433}</span><span class="p">,</span>
+  <span class="na">address</span> <span class="p">=</span> <span class="s">{New York, NY, USA}</span><span class="p">,</span>
+  <span class="na">publisher</span> <span class="p">=</span> <span class="s">{Association for Computing Machinery}</span><span class="p">,</span>
+  <span class="na">isbn</span> <span class="p">=</span> <span class="s">{9798400715242}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://doi.org/10.1145/3718958.3750533}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1145/3718958.3750533}</span><span class="p">,</span>
+  <span class="na">numpages</span> <span class="p">=</span> <span class="s">{25}</span><span class="p">,</span>
+  <span class="na">keywords</span> <span class="p">=</span> <span class="s">{software defined networking, formal methods,
+  		  availability}</span><span class="p">,</span>
+  <span class="na">topics</span> <span class="p">=</span> <span class="s">{dcn}</span><span class="p">,</span>
+  <span class="na">location</span> <span class="p">=</span> <span class="s">{S\~{a}o Francisco Convent, Coimbra, Portugal}</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">SIGCOMM</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="firefly25" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Firefly: Scalable, Ultra-Accurate Clock Synchronization
+		  for Datacenters</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Pooria Namyar, Yuliang Li, Weitao Wang, and
+          <span class="more-authors" title="click to view 10 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '10 more authors' ? 'Nandita Dukkipati, Kk Yap, Junzhi Gong, Chen Chen, Peixuan Gao, Devdeep Ray, Gautam Kumar, Yidan Ma, Ramesh Govindan, Amin Vahdat' : '10 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">10 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In Proceedings of the ACM SIGCOMM 2025 Conference</em>, 2025
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="https://doi.org/10.1145/3718958.3750502" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Link</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1145/3718958.3750502"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Cloud-based financial exchanges require sub-10ns
+		  device-to-device clock synchronization accuracy while
+		  adhering to Coordinated Universal Time (UTC). Existing
+		  clock sync techniques struggle to meet this demand at scale
+		  and are vulnerable to clock drift, jitter, and path
+		  asymmetries. Firefly, a software-driven datacenter clock
+		  sync system, scalably, cost-effectively, and reliably
+		  achieves very high clock sync accuracy. It employs a
+		  distributed consensus algorithm on a random overlay graph
+		  to rapidly converge to a common time while applying gradual
+		  adjustments to device hardware clocks. To realize
+		  consistent sync-to-UTC (external sync) across devices while
+		  maintaining a stable device-to-device internal sync,
+		  Firefly uses a novel technique, layered synchronization,
+		  that decouples internal and external syncs. In a
+		  248-machine Clos network, Firefly achieves sub-10ns
+		  device-to-device and ≤1μs device-to-UTC sync, and is
+		  resilient to time server failure and unstable clocks.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">firefly25</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Namyar, Pooria and Li, Yuliang and Wang, Weitao and Dukkipati, Nandita and Yap, Kk and Gong, Junzhi and Chen, Chen and Gao, Peixuan and Ray, Devdeep and Kumar, Gautam and Ma, Yidan and Govindan, Ramesh and Vahdat, Amin}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Firefly: Scalable, Ultra-Accurate Clock Synchronization
+  		  for Datacenters}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of the ACM SIGCOMM 2025 Conference}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2025}</span><span class="p">,</span>
+  <span class="na">series</span> <span class="p">=</span> <span class="s">{SIGCOMM '25}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{434–452}</span><span class="p">,</span>
+  <span class="na">address</span> <span class="p">=</span> <span class="s">{New York, NY, USA}</span><span class="p">,</span>
+  <span class="na">publisher</span> <span class="p">=</span> <span class="s">{Association for Computing Machinery}</span><span class="p">,</span>
+  <span class="na">isbn</span> <span class="p">=</span> <span class="s">{9798400715242}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://doi.org/10.1145/3718958.3750502}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1145/3718958.3750502}</span><span class="p">,</span>
+  <span class="na">numpages</span> <span class="p">=</span> <span class="s">{19}</span><span class="p">,</span>
+  <span class="na">topics</span> <span class="p">=</span> <span class="s">{dcn}</span><span class="p">,</span>
+  <span class="na">keywords</span> <span class="p">=</span> <span class="s">{clock synchronization, financial exchange, UTC
+  		  synchronization, path asymmetry, distributed consensus}</span><span class="p">,</span>
+  <span class="na">location</span> <span class="p">=</span> <span class="s">{S\~{a}o Francisco Convent, Coimbra, Portugal}</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
         <div class="col-sm-2 abbr"><abbr class="badge">ToN</abbr></div>
 
         <!-- Entry bib key -->
@@ -193,6 +387,215 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">SIGCOMM</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="namyar2021" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">A throughput-centric view of the performance of datacenter
+		  topologies</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Pooria Namyar, Sucha Supittayapornpong, Mingyang Zhang, and
+          <span class="more-authors" title="click to view 2 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '2 more authors' ? 'Minlan Yu, Ramesh Govindan' : '2 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">2 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In ACM SIGCOMM 2021 Conference, Virtual Event, USA,
+		  August 23-27, 2021</em>, Apr 2021
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="https://doi.org/10.1145/3452296.3472913" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Link</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1145/3452296.3472913"></span>
+          </div>
+
+          <!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">namyar2021</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Namyar, Pooria and Supittayapornpong, Sucha and Zhang, Mingyang and Yu, Minlan and Govindan, Ramesh}</span><span class="p">,</span>
+  <span class="na">editor</span> <span class="p">=</span> <span class="s">{Kuipers, Fernando A. and Caesar, Matthew C.}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{A throughput-centric view of the performance of datacenter
+  		  topologies}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{{ACM} {SIGCOMM} 2021 Conference, Virtual Event, USA,
+  		  August 23-27, 2021}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{349--369}</span><span class="p">,</span>
+  <span class="na">publisher</span> <span class="p">=</span> <span class="s">{{ACM}}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2021}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://doi.org/10.1145/3452296.3472913}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1145/3452296.3472913}</span><span class="p">,</span>
+  <span class="na">timestamp</span> <span class="p">=</span> <span class="s">{Wed, 11 Aug 2021 15:56:33 +0200}</span><span class="p">,</span>
+  <span class="na">topics</span> <span class="p">=</span> <span class="s">{dcn}</span><span class="p">,</span>
+  <span class="na">biburl</span> <span class="p">=</span> <span class="s">{https://dblp.org/rec/conf/sigcomm/NamyarS0YG21.bib}</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">NSDI</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="pang22a" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">CloudCluster: Unearthing the Functional Structure of a
+		  Cloud Service</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Weiwu Pang, Sourav Panda, Jehangir Amjad, and
+          <span class="more-authors" title="click to view 2 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '2 more authors' ? 'Christophe Diot, Ramesh Govindan' : '2 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">2 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In 19th USENIX Symposium on Networked Systems Design and
+		  Implementation (NSDI 22)</em>, Apr 2022
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="https://www.usenix.org/conference/nsdi22/presentation/pang" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Link</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-isbn="978-1-939133-27-4"></span>
+          </div>
+
+          <!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">pang22a</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Pang, Weiwu and Panda, Sourav and Amjad, Jehangir and Diot, Christophe and Govindan, Ramesh}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{CloudCluster}: Unearthing the Functional Structure of a
+  		  Cloud Service}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{19th USENIX Symposium on Networked Systems Design and
+  		  Implementation (NSDI 22)}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
+  <span class="na">isbn</span> <span class="p">=</span> <span class="s">{978-1-939133-27-4}</span><span class="p">,</span>
+  <span class="na">address</span> <span class="p">=</span> <span class="s">{Renton, WA}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{1213--1230}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://www.usenix.org/conference/nsdi22/presentation/pang}</span><span class="p">,</span>
+  <span class="na">publisher</span> <span class="p">=</span> <span class="s">{USENIX Association}</span><span class="p">,</span>
+  <span class="na">topics</span> <span class="p">=</span> <span class="s">{dcn}</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">SIGCOMM</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="ramesh16a" class="col-sm-8">
+        <!-- Title -->
+        <div class="title"> Evolve or Die: High-Availability Design Principles Drawn
+		  from Google’s Network Infrastructure </div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <em>Ramesh Govindan</em>, Ina Minei, Mahesh Kallahalla, and
+          <span class="more-authors" title="click to view 2 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '2 more authors' ? 'Bikash Koley, Amin Vahdat' : '2 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">2 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In  Proceedings of the ACM Conference of the Special Interest
+		  Group on Data Communication (SIGCOMM ’16) </em>,  au 2016
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+          </div>
+
+          <!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">ramesh16a</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Govindan, Ramesh and Minei, Ina and Kallahalla, Mahesh and Koley, Bikash and Vahdat, Amin}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{ {Evolve or Die: High-Availability Design Principles Drawn
+  		  from Google’s Network Infrastructure} }</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{ Proceedings of the ACM Conference of the Special Interest
+  		  Group on Data Communication (SIGCOMM '16) }</span><span class="p">,</span>
+  <span class="na">month</span> <span class="p">=</span>  <span class="nv">au</span><span class="p">,</span>
+  <span class="na">location</span> <span class="p">=</span> <span class="s">{ Florianópolis, Brazil }</span><span class="p">,</span>
+  <span class="na">topics</span> <span class="p">=</span> <span class="s">{dcn,measure}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2016}</span><span class="p">,</span>
+  		  <span class="p">}</span>
+<span class="c">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
         <div class="col-sm-2 abbr"><abbr class="badge">SoCC</abbr></div>
 
         <!-- Entry bib key -->
@@ -223,7 +626,7 @@
         
         <div class="periodical">
           <em>In SoCC ’22: Proceedings of the ACM Symposium on Cloud
-		  Computing</em>, Apr 2022
+		  Computing</em>,  au 2022
         </div>
         <div class="periodical">
           
@@ -317,7 +720,7 @@
         
         <div class="periodical">
           <em>In IEEE INFOCOM 2022 - IEEE Conference on Computer
-		  Communications</em>, Apr 2022
+		  Communications</em>,  au 2022
         </div>
         <div class="periodical">
           
@@ -352,217 +755,6 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">NSDI</abbr></div>
-
-        <!-- Entry bib key -->
-        <div id="pang22a" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">CloudCluster: Unearthing the Functional Structure of a
-		  Cloud Service</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Weiwu Pang, Sourav Panda, Jehangir Amjad, and
-          <span class="more-authors" title="click to view 2 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '2 more authors' ? 'Christophe Diot, Ramesh Govindan' : '2 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">2 more authors</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>In 19th USENIX Symposium on Networked Systems Design and
-		  Implementation (NSDI 22)</em>, Apr 2022
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-            <a href="https://www.usenix.org/conference/nsdi22/presentation/pang" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Link</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-isbn="978-1-939133-27-4"></span>
-          </div>
-
-          <!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">pang22a</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Pang, Weiwu and Panda, Sourav and Amjad, Jehangir and Diot, Christophe and Govindan, Ramesh}</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{{CloudCluster}: Unearthing the Functional Structure of a
-  		  Cloud Service}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{19th USENIX Symposium on Networked Systems Design and
-  		  Implementation (NSDI 22)}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
-  <span class="na">isbn</span> <span class="p">=</span> <span class="s">{978-1-939133-27-4}</span><span class="p">,</span>
-  <span class="na">address</span> <span class="p">=</span> <span class="s">{Renton, WA}</span><span class="p">,</span>
-  <span class="na">pages</span> <span class="p">=</span> <span class="s">{1213--1230}</span><span class="p">,</span>
-  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://www.usenix.org/conference/nsdi22/presentation/pang}</span><span class="p">,</span>
-  <span class="na">publisher</span> <span class="p">=</span> <span class="s">{USENIX Association}</span><span class="p">,</span>
-  <span class="na">topics</span> <span class="p">=</span> <span class="s">{dcn}</span>
-<span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">ArXiv</abbr></div>
-
-        <!-- Entry bib key -->
-        <div id="zhang21a" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Gemini: Practical Reconfigurable Datacenter Networks with
-		  Topology and Traffic Engineering</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Mingyang Zhang, Jianan Zhang, Rui Wang, and
-          <span class="more-authors" title="click to view 3 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '3 more authors' ? 'Ramesh Govindan, Jeffrey C. Mogul, Amin Vahdat' : '3 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">3 more authors</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>CoRR</em>, Apr 2021
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-            <a href="https://arxiv.org/abs/2110.08374" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Link</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-arxiv-id="2110.08374"></span>
-          </div>
-
-          <!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">zhang21a</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Zhang, Mingyang and Zhang, Jianan and Wang, Rui and Govindan, Ramesh and Mogul, Jeffrey C. and Vahdat, Amin}</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{Gemini: Practical Reconfigurable Datacenter Networks with
-  		  Topology and Traffic Engineering}</span><span class="p">,</span>
-  <span class="na">journal</span> <span class="p">=</span> <span class="s">{CoRR}</span><span class="p">,</span>
-  <span class="na">volume</span> <span class="p">=</span> <span class="s">{abs/2110.08374}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2021}</span><span class="p">,</span>
-  <span class="na">eprinttype</span> <span class="p">=</span> <span class="s">{arXiv}</span><span class="p">,</span>
-  <span class="na">eprint</span> <span class="p">=</span> <span class="s">{2110.08374}</span><span class="p">,</span>
-  <span class="na">timestamp</span> <span class="p">=</span> <span class="s">{Thu, 03 Feb 2022 07:26:25 +0100}</span><span class="p">,</span>
-  <span class="na">biburl</span> <span class="p">=</span> <span class="s">{https://dblp.org/rec/journals/corr/abs-2110-08374.bib}</span><span class="p">,</span>
-  <span class="na">bibsource</span> <span class="p">=</span> <span class="s">{dblp computer science bibliography, https://dblp.org}</span><span class="p">,</span>
-  <span class="na">topics</span> <span class="p">=</span> <span class="s">{dcn}</span>
-<span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">SIGCOMM</abbr></div>
-
-        <!-- Entry bib key -->
-        <div id="namyar2021" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">A throughput-centric view of the performance of datacenter
-		  topologies</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Pooria Namyar, Sucha Supittayapornpong, Mingyang Zhang, and
-          <span class="more-authors" title="click to view 2 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '2 more authors' ? 'Minlan Yu, Ramesh Govindan' : '2 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">2 more authors</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>In ACM SIGCOMM 2021 Conference, Virtual Event, USA,
-		  August 23-27, 2021</em>, Apr 2021
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-            <a href="https://doi.org/10.1145/3452296.3472913" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Link</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1145/3452296.3472913"></span>
-          </div>
-
-          <!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">namyar2021</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Namyar, Pooria and Supittayapornpong, Sucha and Zhang, Mingyang and Yu, Minlan and Govindan, Ramesh}</span><span class="p">,</span>
-  <span class="na">editor</span> <span class="p">=</span> <span class="s">{Kuipers, Fernando A. and Caesar, Matthew C.}</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{A throughput-centric view of the performance of datacenter
-  		  topologies}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{{ACM} {SIGCOMM} 2021 Conference, Virtual Event, USA,
-  		  August 23-27, 2021}</span><span class="p">,</span>
-  <span class="na">pages</span> <span class="p">=</span> <span class="s">{349--369}</span><span class="p">,</span>
-  <span class="na">publisher</span> <span class="p">=</span> <span class="s">{{ACM}}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2021}</span><span class="p">,</span>
-  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://doi.org/10.1145/3452296.3472913}</span><span class="p">,</span>
-  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1145/3452296.3472913}</span><span class="p">,</span>
-  <span class="na">timestamp</span> <span class="p">=</span> <span class="s">{Wed, 11 Aug 2021 15:56:33 +0200}</span><span class="p">,</span>
-  <span class="na">topics</span> <span class="p">=</span> <span class="s">{dcn}</span><span class="p">,</span>
-  <span class="na">biburl</span> <span class="p">=</span> <span class="s">{https://dblp.org/rec/conf/sigcomm/NamyarS0YG21.bib}</span>
-<span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
         <div class="col-sm-2 abbr"><abbr class="badge">SIGCOMM</abbr></div>
 
         <!-- Entry bib key -->
@@ -580,7 +772,7 @@
         
         
         <div class="periodical">
-          Apr 2019
+          au 2019
         </div>
         <div class="periodical">
           
@@ -648,7 +840,7 @@
         
         <div class="periodical">
           <em>In 16th USENIX Symposium on Networked Systems Design and
-		  Implementation (NSDI)</em>, Apr 2019
+		  Implementation (NSDI)</em>,  au 2019
         </div>
         <div class="periodical">
           
@@ -684,22 +876,22 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">SIGCOMM</abbr></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">ArXiv</abbr></div>
 
         <!-- Entry bib key -->
-        <div id="ramesh16a" class="col-sm-8">
+        <div id="zhang21a" class="col-sm-8">
         <!-- Title -->
-        <div class="title"> Evolve or Die: High-Availability Design Principles Drawn
-		  from Google’s Network Infrastructure </div>
+        <div class="title">Gemini: Practical Reconfigurable Datacenter Networks with
+		  Topology and Traffic Engineering</div>
         <!-- Author -->
         <div class="author">
         
 
-        <em>Ramesh Govindan</em>, Ina Minei, Mahesh Kallahalla, and
-          <span class="more-authors" title="click to view 2 more authors" onclick="
+        Mingyang Zhang, Jianan Zhang, Rui Wang, and
+          <span class="more-authors" title="click to view 3 more authors" onclick="
                 var element = $(this);
                 element.attr('title', '');
-                var more_authors_text = element.text() == '2 more authors' ? 'Bikash Koley, Amin Vahdat' : '2 more authors';
+                var more_authors_text = element.text() == '3 more authors' ? 'Ramesh Govindan, Jeffrey C. Mogul, Amin Vahdat' : '3 more authors';
                 var cursorPosition = 0;
                 var textAdder = setInterval(function(){
                   element.text(more_authors_text.substring(0, cursorPosition + 1));
@@ -707,15 +899,14 @@
                     clearInterval(textAdder);
                   }
               }, '10');
-              ">2 more authors</span>
+              ">3 more authors</span>
 </div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>In  Proceedings of the ACM Conference of the Special Interest
-		  Group on Data Communication (SIGCOMM ’16) </em>,  au 2016
+          <em>CoRR</em>,  au 2021
         </div>
         <div class="periodical">
           
@@ -724,26 +915,29 @@
           <!-- Links/Buttons -->
           <div class="links">
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="https://arxiv.org/abs/2110.08374" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Link</a>
           </div>
           
           <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-arxiv-id="2110.08374"></span>
           </div>
 
           <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">ramesh16a</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Govindan, Ramesh and Minei, Ina and Kallahalla, Mahesh and Koley, Bikash and Vahdat, Amin}</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{ {Evolve or Die: High-Availability Design Principles Drawn
-  		  from Google’s Network Infrastructure} }</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{ Proceedings of the ACM Conference of the Special Interest
-  		  Group on Data Communication (SIGCOMM '16) }</span><span class="p">,</span>
-  <span class="na">month</span> <span class="p">=</span>  <span class="nv">au</span><span class="p">,</span>
-  <span class="na">location</span> <span class="p">=</span> <span class="s">{ Florianópolis, Brazil }</span><span class="p">,</span>
-  <span class="na">topics</span> <span class="p">=</span> <span class="s">{dcn,measure}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2016}</span><span class="p">,</span>
-  		  <span class="p">}</span>
-<span class="c">}</span></code></pre></figure>
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">zhang21a</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Zhang, Mingyang and Zhang, Jianan and Wang, Rui and Govindan, Ramesh and Mogul, Jeffrey C. and Vahdat, Amin}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Gemini: Practical Reconfigurable Datacenter Networks with
+  		  Topology and Traffic Engineering}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{CoRR}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{abs/2110.08374}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2021}</span><span class="p">,</span>
+  <span class="na">eprinttype</span> <span class="p">=</span> <span class="s">{arXiv}</span><span class="p">,</span>
+  <span class="na">eprint</span> <span class="p">=</span> <span class="s">{2110.08374}</span><span class="p">,</span>
+  <span class="na">timestamp</span> <span class="p">=</span> <span class="s">{Thu, 03 Feb 2022 07:26:25 +0100}</span><span class="p">,</span>
+  <span class="na">biburl</span> <span class="p">=</span> <span class="s">{https://dblp.org/rec/journals/corr/abs-2110-08374.bib}</span><span class="p">,</span>
+  <span class="na">bibsource</span> <span class="p">=</span> <span class="s">{dblp computer science bibliography, https://dblp.org}</span><span class="p">,</span>
+  <span class="na">topics</span> <span class="p">=</span> <span class="s">{dcn}</span>
+<span class="p">}</span></code></pre></figure>
           </div>
         </div>
       </div>
