@@ -4,11 +4,11 @@
  "papers"
  (lambda ()
    (LaTeX-add-bibitems
-    "Zenith25"
-    "Firefly25"
-    "AhmadCIP"
-    "CATSNamo25"
-    "Shihan2025Tiered"
+    "zenith25"
+    "firefly25"
+    "ahmadcip"
+    "catsnamo25"
+    "shihan2025tiered"
     "abdelzaher2018"
     "aerotraj"
     "ahmad2020"
