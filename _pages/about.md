@@ -18,7 +18,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-> **Office:** GCS 502C
+> **Office:** GCS 502G
 > **Office Hours** (Fall 2025): Th 4-6pm, GCS SB7
 
 ## brief bio
