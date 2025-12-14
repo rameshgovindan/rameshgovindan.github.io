@@ -483,6 +483,48 @@
 @STRING{wwwj	= "World-Wide Web Journal" }
 @STRING{xerox-parc="XEROX Palo Alto Research Center" }
 
+%% PUBS
+
+@Article{ghosh25,
+  author = 	 {Ghosh, Rajrup and Shin, Christina Suyong and Zhang, Lei and Ye, Muyang and Jin, Tao and Madhyastha, Harsha V. and Netravali, Ravi and Ortega, Antonio and Rao, Sanjay and Rowe, Anthony and Govindan, Ramesh},
+  title = 	 {LiVo: Toward Bandwidth-adaptive Fully-Immersive Volumetric Video Conferencing},
+  journal = 	 {Proc. ACM Netw.},
+  year = 	 2025,
+  volume = 	 3,
+  number = 	 {CoNEXT4},
+  month = 	 nov,
+  issue_date = 	 {December 2025},
+  publisher = 	 {Association for Computing Machinery},
+  address = 	 {New York, NY, USA},
+  url = 	 {https://doi.org/10.1145/3768981},
+  doi = 	 {10.1145/3768981},
+  abstract = 	 {Volumetric video allows users 6 degrees of freedom (6-DoF) in viewing continuously evolving scenes in 3D. Given broadband speeds today, volumetric video conferencing will soon be feasible. Even so, these scenes will need to be compressed, and compression will need to adapt to variations in bandwidth availability. Existing 3D compression techniques cannot adapt to bandwidth availability, are slow, and utilize bandwidth inefficiently, so they don't scale well to large scene descriptions. LiVo achieves low-latency and large-scene two-way conferencing by maximally leveraging existing 2D video infrastructure, including compression standards, rate-adaptive codecs, and real-time transport protocols. To achieve high quality, LiVo must carefully compose scenes from multiple cameras into multiple streams, encode scene geometry in a novel way, adapt to and apportion available bandwidth dynamically between streams to ensure high reconstruction quality, and cull content outside the receiver's field of view to reduce information sent into the network. These novel contributions enable LiVo to outperform the state-of-the-art by over 20\% in objective quality. In a user study, LiVo achieves a mean opinion score of 4.1, while other approaches achieve significantly lower values.},
+  articleno = 	 34,
+  numpages = 	 25,
+  abbr = 	 {CoNEXT},
+  selected =	 {true},
+  keywords = 	 {bandwidth adaptation, conferencing, volumetric video}}
+
+@InProceedings{pang2025,
+  author = 	 {Pang, Weiwu and Ghosh, Rajrup and Yang, Jiawei and Wei, Ziyu and Leong, Branden and Wang, Yue and Govindan, Ramesh},
+  title = 	 {SplatPose: On-Device Outdoor AR Pose Estimation Using Gaussian Splatting},
+  booktitle = 	 {Proceedings of the 33rd ACM International Conference on Multimedia},
+  year = 	 2025,
+  series = 	 {MM '25},
+  pages = 	 {11899–11908},
+  address = 	 {New York, NY, USA},
+  publisher = 	 {Association for Computing Machinery},
+  isbn = 	 9798400720352,
+  url = 	 {https://doi.org/10.1145/3746027.3755709},
+  doi = 	 {10.1145/3746027.3755709},
+  abstract = 	 {Outdoor AR applications on mobile devices need accurate estimates for the pose of the device. In this paper, we develop SplatPose, a novel pose estimation technique that uses a data-driven 3D modeling technique called Gaussian Splatting. SplatPose uses a trained Gaussian Splatting model to render an image at an estimated device location, then matches features with the camera image to estimate pose. \% Because this matching can be fast, SplatPose can, in theory, estimate pose entirely on a mobile device, while existing approaches cannot. To this end, SplatPose trains Gaussian Splatting models to be robust to appearance changes, thereby improving accuracy. It also incorporates a novel fast renderer to improve rendering speed. Using an AR pose estimation benchmark dataset, we show that SplatPose outperforms the state-of-the-art in terms of accuracy, and is up to an order of magnitude faster on a mobile device.},
+  numpages = 	 10,
+  keywords = 	 {augmented reality, gaussian splatting, outdoor pose
+                  estimation},
+  abbr = 	 {Multimedia},
+  selected =	 {true},
+  location = 	 {Dublin, Ireland}}
+
 @InProceedings{	  namyar.p.ghavidel.a.ea:zenith,
   author	= {Namyar, Pooria and Ghavidel, Arvin and Zhang, Mingyang and
 		  Madhyastha, Harsha V. and Ravi, Srivatsan and Wang, Chao
@@ -651,8 +693,7 @@
   booktitle	= {22nd USENIX Symposium on Networked Systems Design and
 		  Implementation (NSDI 25)},
   year		= 2025,
-  abbr		= {NSDI},
-  selected	= {true}
+  abbr		= {NSDI}
 }
 
 @InProceedings{	  liang.y.govindan.r.ea:granular,
@@ -661,8 +702,7 @@
   booktitle	= {Proceedings of the 20th Workshop on Hot Topics in
 		  Operating Systems},
   year		= {2025},
-  abbr		= {HotOS},
-  selected	= {yes}
+  abbr		= {HotOS}
 }
 
 @InProceedings{	  namyar.p.ghavidel.a.ea:enhancing,
