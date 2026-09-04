@@ -14,6 +14,9 @@
 #   bin/publish "commit message"
 #   bin/publish --no-commit          # skip step 1, just rebuild + redeploy current master
 #   bin/publish -s master -d gh-pages "commit message"
+#   bin/publish --preview            # build + serve locally, including uncommitted edits;
+#                                     # nothing is committed, pushed, or deployed
+#   bin/publish --preview --port 4001
 
 set -euo pipefail
 
@@ -21,9 +24,12 @@ SRC_BRANCH="master"
 DEPLOY_BRANCH="gh-pages"
 NO_COMMIT=""
 COMMIT_MSG=""
+PREVIEW=""
+PORT="4000"
 
 usage() {
     echo "usage: bin/publish [-s|--src SRC_BRANCH] [-d|--deploy DEPLOY_BRANCH] [--no-commit] [commit message]"
+    echo "       bin/publish --preview [--port PORT]"
 }
 
 while [[ $# -gt 0 ]]; do
@@ -32,6 +38,8 @@ while [[ $# -gt 0 ]]; do
         -s|--src) SRC_BRANCH="$2"; shift 2 ;;
         -d|--deploy) DEPLOY_BRANCH="$2"; shift 2 ;;
         --no-commit) NO_COMMIT="1"; shift ;;
+        -p|--preview) PREVIEW="1"; shift ;;
+        --port) PORT="$2"; shift 2 ;;
         *) COMMIT_MSG="$1"; shift ;;
     esac
 done
@@ -50,6 +58,19 @@ fi
 BUNDLER_VERSION="$(tail -1 Gemfile.lock | tr -d ' ')"
 export BUNDLE_PATH="$REPO_ROOT/vendor/bundle"
 bundle_exec() { bundle "_${BUNDLER_VERSION}_" "$@"; }
+
+if [[ -n "$PREVIEW" ]]; then
+    # Serve straight from the working directory (not a worktree) so
+    # uncommitted edits show up immediately. Nothing here is committed,
+    # pushed, or deployed. Site-only files (CLAUDE.md, Agent/) are still
+    # skipped, since that's enforced by _config.yml's exclude list, not
+    # by which files happen to be tracked.
+    bundle_exec check >/dev/null 2>&1 || bundle_exec install
+    echo "Serving at http://127.0.0.1:$PORT/ -- Ctrl-C to stop. Nothing will be committed or pushed."
+    export JEKYLL_ENV=development
+    bundle_exec exec jekyll serve --port "$PORT"
+    exit 0
+fi
 
 current_branch="$(git rev-parse --abbrev-ref HEAD)"
 if [[ "$current_branch" != "$SRC_BRANCH" ]]; then

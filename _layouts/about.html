@@ -4,11 +4,16 @@ layout: default
 
 <!-- about.html -->
       <div class="post">
-        <header class="post-header">
-          <h1 class="post-title">
-           {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
-          </h1>
-          <p class="desc">{{ page.subtitle }}</p>
+        <header class="post-header{% if page.department_logo %} header-with-logo{% endif %}">
+          {%- if page.department_logo %}
+          <img class="dept-logo" src="{{ page.department_logo | prepend: 'assets/img/' | relative_url }}" alt="{{ page.department_logo_alt }}">
+          {%- endif %}
+          <div class="header-text">
+            <h1 class="post-title">
+             {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
+            </h1>
+            <p class="desc">{{ page.subtitle }}</p>
+          </div>
         </header>
 
         <article>

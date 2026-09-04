@@ -6,8 +6,10 @@ subtitle: <i>Northrop-Grumman Chair in Engineering</i> <br>
   <i>Professor of Computer Science</i> <br>
   <a href="https://cs.USC.edu">Thomas Lord Department of Computer Science</a> <br>
   <a href="https://viterbi.USC.edu">Viterbi School of Engineering</a> <br>
-  <a href="https://www.USC.edu">University of Southern California</a> <br>
-  <img src="/assets/img/lord_logo.png" alt="Thomas Lord Department of Computer Science" style="height:60px; margin-top:8px;">
+  <a href="https://www.USC.edu">University of Southern California</a>
+
+department_logo: lord_logo.png
+department_logo_alt: Thomas Lord Department of Computer Science
 
 profile:
   align: right

@@ -33,6 +33,43 @@ body.sticky-bottom-footer {
   }
 }
 
+// Post header with a logo alongside the title/subtitle.
+// The logo gets an explicit height (sized to roughly match the rendered
+// title+subtitle block) rather than one derived from the text block via
+// stretch: a column/row's "auto" size is computed from the image's own
+// intrinsic size, not from its sibling, so "stretch to match" is
+// circular and unsupported by CSS for a dynamically-sized sibling.
+.header-with-logo {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: 1rem;
+
+  .dept-logo {
+    width: 100px;
+    height: auto;
+  }
+}
+
+@media (min-width: 576px) {
+  .header-with-logo {
+    grid-template-columns: auto 1fr;
+    justify-items: stretch;
+    align-items: center;
+    text-align: right;
+
+    .dept-logo {
+      width: auto;
+      height: 10rem;
+      justify-self: start;
+    }
+
+    .header-text {
+      min-width: 0;
+    }
+  }
+}
+
 // TODO: redefine content layout.
 
 
