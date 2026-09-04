@@ -485,9 +485,26 @@
 
 %% PUBS
 
-@Article{ghosh25,
+@InProceedings{ghavidel2026,
+  author = 	 {Ghavidel, Arvin and Namyar, Pooria and Matni, Nikolai and Willinger, Walter and Govindan, Ramesh},
+  title = 	 {Near-optimal Online Traffic Engineering},
+  booktitle = 	 {Proceedings of the ACM SIGCOMM 2026 Conference},
+  year = 	 2026,
+  series = 	 {SIGCOMM '26},
+  pages = 	 {1024–1045},
+  address = 	 {New York, NY, USA},
+  publisher = 	 {Association for Computing Machinery},
+  isbn = 	 9798400724671,
+  url = 	 {https://doi.org/10.1145/3789240.3829123},
+  doi = 	 {10.1145/3789240.3829123},
+  abstract = 	 {Most deployed WAN Traffic Engineering (TE) systems use a logically centralized controller that periodically gathers traffic demands, runs a TE optimization or heuristic, and then programs the network. At scale, these solutions are often suboptimal and can take minutes to react to demand changes or failures. In this paper, we introduce OnlineTE, a system that reacts immediately to demand changes and failures and delivers near-optimal solutions within seconds of a change. OnlineTE builds on the theory of optimization decomposition to devise scalable, near-optimal, distributed TE solvers for path-based MLU and Max-Flow problems. In OnlineTE, switches each solve a local subproblem, and a central coordinator coordinates their convergence. As such, a switch can trigger a re-optimization as soon as it detects a demand change or failure, enabling high reactivity. OnlineTE scales to large WANs, and its computational requirements are well within the capabilities of modern WAN switches. It also enables a novel paradigm, edge-based TE, which can utilize resources more efficiently than today's path-based approaches. On a testbed emulation of a 750-node WAN topology, OnlineTE outperforms the state-of-the-art by up to an order of magnitude.},
+  numpages = 	 22,
+  keywords = 	 {traffic engineering, wide-area networks, network optimization, distributed and parallel algorithms},
+  location = 	 {Colorado Convention Center, Denver, CO, USA}}
+
+@InProceedings{ghosh25,
   author = 	 {Ghosh, Rajrup and Shin, Christina Suyong and Zhang, Lei and Ye, Muyang and Jin, Tao and Madhyastha, Harsha V. and Netravali, Ravi and Ortega, Antonio and Rao, Sanjay and Rowe, Anthony and Govindan, Ramesh},
-  title = 	 {LiVo: Toward Bandwidth-adaptive Fully-Immersive Volumetric Video Conferencing},
+  title = 	 {{LiVo: Toward Bandwidth-adaptive Fully-Immersive Volumetric Video Conferencing}},
   journal = 	 {Proc. ACM Netw.},
   year = 	 2025,
   volume = 	 3,
@@ -1864,7 +1881,7 @@
 		  }
 }
 
-@InProceedings{	  jiang.y.ravindranath.l.ea:webperf--evaluating-“what-if”-scenarios-for-cloud-hosted-web-applications,
+@InProceedings{	  jiang.y.ravindranath.l.ea:webperf--evaluating-what-if-scenarios-for-cloud-hosted-web-applications,
   author	= { Yurong Jiang and Lenin Ravindranath and Suman Nath and
 		  Ramesh Govindan },
   title		= { {WebPerf: Evaluating “What-If” Scenarios for
@@ -1876,9 +1893,6 @@
   location	= { Florianópolis, Brazil },
   topics	= {measure},
   year		= {2016},
-  pdfurl	= {
-		  https://nsl.cs.usc.edu/Papers?action=download&upname=webperf.pdf
-		  }
 }
 
 @Article{	  liu.b.govindan.r.ea:do-emotions-expressed-online-correlate-with-actual-changes-in-decision-making--the-case-of-stock-day-traders-,
@@ -1910,7 +1924,7 @@
   projects	= { Software-definedMeasurement }
 }
 
-@InProceedings{	  govindan.r.minei.i.ea:evolve-or-die--high-availability-design-principles-drawn-from-google’s-network-infrastructure,
+@InProceedings{	  govindan.r.minei.i.ea:evolve-or-die--high-availability-design-principles-drawn-from-googles-network-infrastructure,
   author	= { Ramesh Govindan and Ina Minei and Mahesh Kallahalla and
 		  Bikash Koley and Amin Vahdat },
   title		= { {Evolve or Die: High-Availability Design Principles Drawn
@@ -1922,42 +1936,37 @@
   abbr		= {SIGCOMM},
   topics	= {dcn,measure},
   year		= {2016},
-  pdfurl	= {
-		  https://nsl.cs.usc.edu/Papers?action=download&upname=ramesh16a.pdf
-		  }
 }
 
 @InProceedings{	  xu.x.akhtar.z.ea:context-adaptive-thresholding-and-entropy-coding-for-very-low-complexity-jpeg-transcoding,
-  author	= { Xing Xu and Zahaib Akhtar and Ramesh Govindan and Wyatt
+  author = 	 { Xing Xu and Zahaib Akhtar and Ramesh Govindan and Wyatt
 		  Lloyd and Antonio Ortega },
-  title		= { {Context adaptive thresholding and entropy coding for
+  title = 	 { {Context adaptive thresholding and entropy coding for
 		  very low complexity JPEG transcoding} },
-  booktitle	= { 2016 IEEE International Conference on Acoustics, Speech
+  booktitle = 	 { 2016 IEEE International Conference on Acoustics, Speech
 		  and Signal Processing (ICASSP) },
-  month		= { March },
-  location	= { Shanghai, China },
-  abbr		= {video},
-  year		= {2016},
-  pdfurl	= {
+  year = 	 2016,
+  month = 	 { March },
+  location = 	 { Shanghai, China },
+  abbr = 	 {video},
+  pdfurl = 	 {
 		  https://nsl.cs.usc.edu/Papers/?action=download&upname=xu16a.pdf
-		  }
-}
+		  }}
 
 @InProceedings{	  hu.y.liu.x.ea:alps--accurate-landmark-positioning-at-city-scales,
-  author	= { Yitao Hu and Xiaochen Liu and Suman Nath and Ramesh
+  author = 	 { Yitao Hu and Xiaochen Liu and Suman Nath and Ramesh
 		  Govindan },
-  title		= { {ALPS: Accurate Landmark Positioning at City Scales} },
-  booktitle	= { the 2016 ACM International Joint Conference on Pervasive
+  title = 	 { {ALPS: Accurate Landmark Positioning at City Scales} },
+  booktitle = 	 { the 2016 ACM International Joint Conference on Pervasive
 		  and Ubiquitous Computing (UbiComp 2016) },
-  month		= { September },
-  location	= { Heidelberg, Germany },
-  year		= {2016},
-  abbr		= {Ubicomp},
-  topics	= {mobile},
-  pdfurl	= {
+  year = 	 2016,
+  month = 	 { September },
+  location = 	 { Heidelberg, Germany },
+  abbr = 	 {Ubicomp},
+  topics = 	 {mobile},
+  pdfurl = 	 {
 		  https://nsl.cs.usc.edu/Papers?action=download&upname=Yitao16a.pdf
-		  }
-}
+		  }}
 
 @InProceedings{	  akhtar.z.hussain.a.ea:dbit--assessing-statistically-significant-differences-in-cdn-performance,
   author	= { Zahaib Akhtar and Alefiya Hussain and Ethan Katz-Bassett
@@ -2288,33 +2297,31 @@
 }
 
 @InProceedings{	  zarifis.k.flach.t.ea:diagnosing-path-inflation-of-mobile-client-traffic,
-  author	= { Kyriakos Zarifis and Tobias Flach and Srikanth Nori and
+  author = 	 { Kyriakos Zarifis and Tobias Flach and Srikanth Nori and
 		  David Choffnes and Ramesh Govindan and Ethan Katz-Bassett
 		  and Z. Morley Mao and Matt Welsh },
-  title		= { {Diagnosing Path Inflation of Mobile Client Traffic} },
-  booktitle	= { Passive and Active Measurement Conference (PAM '14) },
-  month		= { March },
-  location	= { Los Angeles, CA },
-  year		= {2014},
-  abbr		= {video},
-  pdfurl	= {
+  title = 	 { {Diagnosing Path Inflation of Mobile Client Traffic} },
+  booktitle = 	 { Passive and Active Measurement Conference (PAM '14) },
+  year = 	 2014,
+  month = 	 { March },
+  location = 	 { Los Angeles, CA },
+  abbr = 	 {video},
+  pdfurl = 	 {
 		  http://nsl.cs.usc.edu/Papers/?action=download&upname=Zarifis14a.pdf
 		  },
-  ppturl	= {
+  ppturl = 	 {
 		  http://nsl.cs.usc.edu/Talks/?action=download&upname=flach_pam14_inflation.pdf
 		  },
-  projects	= { MobilePathInflation }
-}
+  projects = 	 { MobilePathInflation }}
 
-@InProceedings{	  calder.m.fan.x.ea:mapping-the-expansion-of-google’s-serving-infrastructure,
-  author	= {M. Calder and X. Fan and Z. Hu and E. Katz-Bassett and J.
+@InProceedings{	  calder.m.fan.x.ea:mapping-the-expansion-of-googles-serving-infrastructure,
+  author = 	 {M. Calder and X. Fan and Z. Hu and E. Katz-Bassett and J.
 		  Heidemann and R. Govindan},
-  title		= {{Mapping the Expansion of Google’s Serving
+  title = 	 {{Mapping the Expansion of Google’s Serving
 		  Infrastructure}},
-  abbr		= {IMC},
-  booktitle	= {Proc. ACM Internet Measurement Conference},
-  year		= 2013
-}
+  booktitle = 	 {Proc. ACM Internet Measurement Conference},
+  year = 	 2013,
+  abbr = 	 {IMC}}
 
 @InProceedings{	  cheng.d.hsiung.h.ea:a-new-march-test-for-process-variation-induced-delay-faults-in-srams,
   author	= {D. Cheng and H. Hsiung and B. Liu and J. Chen and J. Zeng

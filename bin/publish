@@ -1,0 +1,128 @@
+#!/usr/bin/env bash
+#
+# Compile, commit, and push the site without relying on GitHub Actions.
+#
+# What it does:
+#   1. Commits any pending changes on the source branch (default: master) and pushes them.
+#   2. Builds the Jekyll site in a throwaway git worktree checked out from that commit,
+#      so the build only ever sees tracked files -- nothing untracked/gitignored in your
+#      working copy (drafts, CLAUDE.md, stray sync-tool duplicates, etc.) can leak in.
+#   3. Publishes the build output to the deploy branch (default: gh-pages) via a second
+#      worktree, preserving CNAME and .nojekyll, which live only on that branch.
+#
+# Usage:
+#   bin/publish "commit message"
+#   bin/publish --no-commit          # skip step 1, just rebuild + redeploy current master
+#   bin/publish -s master -d gh-pages "commit message"
+
+set -euo pipefail
+
+SRC_BRANCH="master"
+DEPLOY_BRANCH="gh-pages"
+NO_COMMIT=""
+COMMIT_MSG=""
+
+usage() {
+    echo "usage: bin/publish [-s|--src SRC_BRANCH] [-d|--deploy DEPLOY_BRANCH] [--no-commit] [commit message]"
+}
+
+while [[ $# -gt 0 ]]; do
+    case "$1" in
+        -h|--help) usage; exit 0 ;;
+        -s|--src) SRC_BRANCH="$2"; shift 2 ;;
+        -d|--deploy) DEPLOY_BRANCH="$2"; shift 2 ;;
+        --no-commit) NO_COMMIT="1"; shift ;;
+        *) COMMIT_MSG="$1"; shift ;;
+    esac
+done
+
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+cd "$REPO_ROOT"
+
+# Use the project's pinned Ruby (rbenv) if available, and reuse the gems
+# already compiled in vendor/bundle instead of rebuilding them per run.
+# .ruby-version is gitignored, so a fresh build worktree won't have it --
+# read it here and force it via RBENV_VERSION instead.
+if command -v rbenv >/dev/null 2>&1; then
+    eval "$(rbenv init - bash)"
+    [[ -f "$REPO_ROOT/.ruby-version" ]] && export RBENV_VERSION="$(cat "$REPO_ROOT/.ruby-version")"
+fi
+BUNDLER_VERSION="$(tail -1 Gemfile.lock | tr -d ' ')"
+export BUNDLE_PATH="$REPO_ROOT/vendor/bundle"
+bundle_exec() { bundle "_${BUNDLER_VERSION}_" "$@"; }
+
+current_branch="$(git rev-parse --abbrev-ref HEAD)"
+if [[ "$current_branch" != "$SRC_BRANCH" ]]; then
+    echo "You're on branch '$current_branch', not '$SRC_BRANCH'. Switch first." >&2
+    exit 1
+fi
+
+if [[ -z "$NO_COMMIT" ]]; then
+    # Refuse to silently sweep up unexplained files (e.g. sync-tool "(1)"/"(2)"
+    # duplicates) into a commit -- make the user look at them first.
+    suspicious="$(git ls-files --exclude-standard --others | grep -E ' \([0-9]+\)\.' || true)"
+    if [[ -n "$suspicious" ]]; then
+        echo "Untracked files with a suspicious '(1)'/'(2)'-style name were found:" >&2
+        echo "$suspicious" >&2
+        echo "These look like sync-conflict duplicates, not intentional additions." >&2
+        echo "Remove or rename them, then re-run. Aborting." >&2
+        exit 1
+    fi
+
+    if [[ -n "$(git status --porcelain)" ]]; then
+        git status --short
+        if [[ -z "$COMMIT_MSG" ]]; then
+            read -r -p "Commit message: " COMMIT_MSG
+        fi
+        [[ -n "$COMMIT_MSG" ]] || { echo "Empty commit message. Aborting." >&2; exit 1; }
+
+        git add -A
+        git commit -m "$COMMIT_MSG"
+    else
+        echo "Nothing to commit on $SRC_BRANCH."
+    fi
+
+    read -r -p "Push $SRC_BRANCH to origin? [y/N] " reply
+    [[ "$reply" =~ ^[Yy]$ ]] || { echo "Not pushing $SRC_BRANCH. Aborting."; exit 1; }
+    git push origin "$SRC_BRANCH"
+fi
+
+BUILD_SHA="$(git rev-parse --short HEAD)"
+BUILD_WT="$(mktemp -d -t publish-build)"
+DEPLOY_WT="$(mktemp -d -t publish-deploy)"
+cleanup() {
+    git worktree remove --force "$BUILD_WT" 2>/dev/null || true
+    git worktree remove --force "$DEPLOY_WT" 2>/dev/null || true
+}
+trap cleanup EXIT
+
+echo "Building $SRC_BRANCH @ $BUILD_SHA in a clean worktree..."
+git worktree add --detach "$BUILD_WT" "$SRC_BRANCH" >/dev/null
+(
+    cd "$BUILD_WT"
+    bundle_exec check >/dev/null 2>&1 || bundle_exec install
+    JEKYLL_ENV=production bundle_exec exec jekyll build
+)
+
+echo "Preparing $DEPLOY_BRANCH worktree..."
+if git show-ref --verify --quiet "refs/heads/$DEPLOY_BRANCH"; then
+    git worktree add "$DEPLOY_WT" "$DEPLOY_BRANCH" >/dev/null
+else
+    git worktree add -B "$DEPLOY_BRANCH" "$DEPLOY_WT" "origin/$DEPLOY_BRANCH" >/dev/null
+fi
+
+rsync -a --delete --exclude='.git' --exclude='CNAME' --exclude='.nojekyll' \
+    "$BUILD_WT/_site/" "$DEPLOY_WT/"
+touch "$DEPLOY_WT/.nojekyll"
+
+(
+    cd "$DEPLOY_WT"
+    git add -A
+    if git diff --cached --quiet; then
+        echo "Nothing changed on $DEPLOY_BRANCH."
+    else
+        git commit -m "Deploy $BUILD_SHA [ci skip]"
+        git push origin "$DEPLOY_BRANCH"
+        echo "Deployed $BUILD_SHA to $DEPLOY_BRANCH."
+    fi
+)

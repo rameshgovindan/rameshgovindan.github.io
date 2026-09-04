@@ -6,7 +6,8 @@ subtitle: <i>Northrop-Grumman Chair in Engineering</i> <br>
   <i>Professor of Computer Science</i> <br>
   <a href="https://cs.USC.edu">Thomas Lord Department of Computer Science</a> <br>
   <a href="https://viterbi.USC.edu">Viterbi School of Engineering</a> <br>
-  <a href="https://www.USC.edu">University of Southern California</a>
+  <a href="https://www.USC.edu">University of Southern California</a> <br>
+  <img src="/assets/img/lord_logo.png" alt="Thomas Lord Department of Computer Science" style="height:60px; margin-top:8px;">
 
 profile:
   align: right
@@ -19,7 +20,7 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 > **Office:** GCS 502G
-> **Office Hours** (Fall 2025): Th 4-6pm, GCS SB7
+> **Office Hours** (Spring 2026): M 2-3pm, Th 4-5pm
 
 ## brief bio
 
